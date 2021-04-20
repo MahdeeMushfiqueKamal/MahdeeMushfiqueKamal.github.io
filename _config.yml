@@ -2,9 +2,10 @@ title: Mahdee Mushfique Kamal
 author: MMK
 email: mmkdhrubo@gmail.com
 description: > # this means to ignore newlines until "show_exerpts:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  This is a minimal personal website of Mahdee Mushfique Kamal
+  This site is inteded to host on github.
+  Special thanks to samarsault for a wonderful template
+
 show_excerpts: true # set to true to show excerpts on the homepage
 
 # Minima date format
@@ -18,7 +19,7 @@ plainwhite:
   sitemap: true # set to true to generate sitemap.xml content
   search: true # set to true to enable searchbar
   dark_mode: true # set to true to add dark mode toggle
-  portfolio_image: "assets/MMK.jpg" # the path from the base directory of the site to the image to display (no / at the start)
+  portfolio_image: "assets/MMK.png" # the path from the base directory of the site to the image to display (no / at the start)
   html_lang: "en" # set the lang attribute of the <html> tag for the pages. See here for a list of codes: https://www.w3schools.com/tags/ref_country_codes.asp
   condensed_mobile:
     #- home
@@ -50,8 +51,8 @@ plainwhite:
 
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
-header_pages:
- - about.md
+#header_pages:
+# - about.md
 
 # Build settings
 remote_theme: samarsault/plainwhite-jekyll
