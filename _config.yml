@@ -25,18 +25,23 @@ plainwhite:
     #- home
     - page
     - post
+  navigation:
+    - title: About Me
+      url: "/about"
+    - title: Resume
+      url: "/resume"
   # generate social links in footer
   social_links:
-    twitter: samarsault
-    github:  samarsault
-    linkedIn: in/samarsault
+    #twitter: DhruboKamal
+    github:  DhruboKamal
+    linkedIn: in/mmkdhrubo
+    facebook: mmk.dhrubo
     #rss: rss
     #dribbble: jekyll
     #flickr:   jekyll
     #instagram: jekyll
     #pinterest: jekyll
     #youtube: jekyll
-    #facebook: jekyll
     #soundcloud: jekyll
     #telegram: jekyll
     #gitlab: jekyll
@@ -48,6 +53,7 @@ plainwhite:
     #   instance: example.com
     # - username: jekyll2
     #   instance: example.com
+  analytics_id: 269674367
 
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
@@ -60,4 +66,9 @@ theme: plainwhite
 
 plugins:
   - jekyll-seo-tag
+  - jekyll-paginate
 #  - jekyll-feed
+
+
+paginate: 5
+paginate_path: "/post/page:num/"
