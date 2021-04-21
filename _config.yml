@@ -26,10 +26,12 @@ plainwhite:
     - page
     - post
   navigation:
-    - title: About Me
-      url: "/about"
     - title: Resume
       url: "/resume"
+    - title: Projects
+      url: "/projects"
+    - title: Contact Me
+      url: "/contact"
   # generate social links in footer
   social_links:
     #twitter: DhruboKamal
