@@ -12,10 +12,10 @@ permalink: contact
 - mmkdhrubo@gmail.com 
 - 1805032@ugrad.cse.buet.ac.bd
 
-**Mainling Address**
-House no 443/A, Road no- 6, 
-Sonadanga Residential Area (2nd Phase), 
-Khulna, Bangladesh.
+**Mainling Address:**  
+> House no 443/A, Road no- 6,   
+  Sonadanga Residential Area (2nd Phase),   
+  Khulna, Bangladesh.
 
 **Social Media Links**
 - Linkedin: linkedin/in/mmkdhrubo
@@ -23,3 +23,6 @@ Khulna, Bangladesh.
 
 
 
+## Reach Me Out
+
+{% include form.html %}
