@@ -177,6 +177,20 @@ main {
   }
 }
 
+.post-card {
+  overflow: auto;
+}
+.post-thumb {
+  float: left;
+  padding-top: 20px;
+}
+.post-thumb img {
+  display: block;
+  
+}
+.post-content {
+  margin-left: 60px;
+}
 .post-wrapper {
   border-bottom: 1px solid #ececec;
   margin-bottom: 1rem;
