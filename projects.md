@@ -15,5 +15,3 @@ permalink: /projects
 - *“Load Game”* - &emsp;Loads the data from a file and resumes from previous session.
 - *“Hall of fame”* - &emsp;Displays the name and the score of top players. 
 
-
-
