@@ -2,7 +2,7 @@
 layout: post
 title:  "GRE Quant topic based video from Khan Academy"
 date:   2021-04-23 19:03:36 +0600
-categories: Javascript NodeJS
+categories: GRE 
 ---
 
 As you prepare for the Quantitative Reasoning measure of the GRE® General Test, we want you to be aware of another free resource that may be helpful to you. Using instructional videos, the [Khan Academy website](https://www.khanacademy.org/) provides additional explanations of concepts in the [Math Review for the Quantitative Reasoning Measure of the GRE General Test (PDF)](https://www.ets.org/s/gre/pdf/gre_math_review.pdf).
