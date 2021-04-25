@@ -25,7 +25,7 @@ permalink: /resume/
 - January 2014 - Feb 2016
 
 ## Technical Skills
-**Programming Language:** C/C++  &emsp;   Java  &emsp;9   Python
+**Programming Language:** C/C++  &emsp;   Java  &emsp;   Python
 
 **Engineering Software:** AutoCAD
 
