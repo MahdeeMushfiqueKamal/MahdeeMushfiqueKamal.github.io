@@ -29,4 +29,18 @@ permalink: /resume/
 
 **Engineering Software:** AutoCAD
 
-**Webdelopment :** HTML, CSS  &emsp; Bootstrap4  &emsp; Jekyll
+**Webdelopment :** HTML, CSS  &emsp; Bootstrap4  &emsp; Jekyll &emsp; Markdown
+
+
+## Scholarships:
+
+- Board General Scholarship in Higher Secondary Certificate. (2019- now)
+- University Technical Scholarship. (2019 - now)
+
+## Certifications: 
+- Python for Everybody Specialization through Coursera offered by University of Michigan. [[verify]](https://coursera.org/share/0f6d8d056dafb6e4d441d1a174b1d3b8) 
+- Mathmetics for Machine Learning: Linear Algebra through Coursera offered by Imperial College London.  [[verify]](https://coursera.org/share/eeac85eab14a3f80aa1e8c53fe66abb3) 
+
+## Leadership Skills:
+- Publication Secretary at BUET Debating Club
+- Campus Ambassador at BDApps.  
