@@ -50,11 +50,13 @@ permalink: /cv/
 **Public Speech and Debate**
 - National Champion of "National Energy Day-Speech Competition, 2015", awarded by Mohammad Abdul Hamid, the honorable President of Bangladesh.
 - National Champion,Debater of the final of "International Womens's Day Debate Fastival 2017" , organized by UN FAO and awarded by Sue Lautze, Country Director, UN Food and Agriculture Organization.
+
 **Programming Competition**
 - Winner, Online Sohopathi Junior Programming Contest.
 - Regional Winner, National High School Programming Contest (2016 and 2017) 
+
 **Math Olympiad**
 - Regional Champion (2016), Runner-up (2015), Bangladesh Mathematical Olympiad.
   
- 
+[view Details]({{"/eca" | relative_url}}) 
    
