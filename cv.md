@@ -1,9 +1,9 @@
 ---
 layout: page
-permalink: /resume/
+permalink: /cv/
 ---
 
-# Resume
+# Curriculum Vitae
 ---
 
 
@@ -20,12 +20,13 @@ permalink: /resume/
 - Science Group, Jessore Board, GPA- 5.00 (out of 5.00)
 
 
-**Khulna Zilla School, Khulna - Secondary School Certificate**
+**Khulna Zilla School, Khulna**
+- Secondary School Certificate
 - Science Group, Jessore Board, GPA- 5.00 (out of 5.00)
 - January 2014 - Feb 2016
 
 ## Technical Skills
-**Programming Language:** C/C++  &emsp;   Java  &emsp;   Python
+**Programming Language:** C/C++  &emsp;   Java  &emsp;   Python   &emsp;   JavaScript
 
 **Engineering Software:** AutoCAD
 
@@ -44,3 +45,16 @@ permalink: /resume/
 ## Leadership Skills:
 - Publication Secretary at BUET Debating Club
 - Campus Ambassador at BDApps.  
+
+## Extra Curricular Activities
+**Public Speech and Debate**
+- National Champion of "National Energy Day-Speech Competition, 2015", awarded by Mohammad Abdul Hamid, the honorable President of Bangladesh.
+- National Champion,Debater of the final of "International Womens's Day Debate Fastival 2017" , organized by UN FAO and awarded by Sue Lautze, Country Director, UN Food and Agriculture Organization.
+**Programming Competition**
+- Winner, Online Sohopathi Junior Programming Contest.
+- Regional Winner, National High School Programming Contest (2016 and 2017) 
+**Math Olympiad**
+- Regional Champion (2016), Runner-up (2015), Bangladesh Mathematical Olympiad.
+  
+ 
+   
