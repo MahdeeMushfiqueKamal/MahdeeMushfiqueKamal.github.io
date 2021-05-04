@@ -31,7 +31,7 @@ plainwhite:
       url: "/cv"
     - title: Projects
       url: "/projects"
-    - title: Contact Me
+    - title: Contact Info
       url: "/contact"
   # generate social links in footer
   social_links:
