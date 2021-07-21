@@ -4,7 +4,7 @@ layout: default
 <div class="post-container">
     <div class="post">
         <div class = "table-of-content">
-            {{ content | toc_only }}
+            {% include toc.html html=content %}
         </div>
         {{ content | inject_anchors }}
     </div>
