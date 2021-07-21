@@ -1,6 +1,7 @@
 ---
 layout: page
 permalink: /cv/
+toc: true
 ---
 
 # Curriculum Vitae

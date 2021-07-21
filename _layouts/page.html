@@ -3,6 +3,9 @@ layout: default
 ---
 <div class="post-container">
     <div class="post">
-        {{ content }}
+        <div class = "table-of-content">
+            {{ content | toc_only }}
+        </div>
+        {{ content | inject_anchors }}
     </div>
 </div>
