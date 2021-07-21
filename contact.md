@@ -1,8 +1,7 @@
 ---
 layout: page
 permalink: contact
----
-# Contact Information
+title: Contact Information
 ---
 
 **Phone Number**

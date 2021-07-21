@@ -7,9 +7,7 @@ layout: default
 {%- endif -%}
 
 
-<ul class="posts">
-  <li>{{ content }}</li>
-</ul>
+<div class="post-container">{{content}}</div>
 
 {%- if site.posts.size > 0 -%}
   <ul class="posts">
@@ -51,13 +49,12 @@ layout: default
               </ul>
               {%- endif -%}
             </div>
-            <div class="post">
+            <div class="post" style="padding-right: 0px;">
               {%- if site.show_excerpts -%}
                 {{ post.excerpt | strip_html | strip_newlines | truncate: 256}}
                 <a href="{{ post.url | relative_url }}" style="text-decoration: none !important;">  ...read more </a>
               {%- endif -%}
-        </div>
-        <p></br></p>
+            </div>
             <!-- Post content ends-->
           </div>
         </div>
