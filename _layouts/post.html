@@ -16,24 +16,14 @@ layout: default
     </ul>
     {%- endif -%}
   </div>
+  <hr><br>
   <div class="post">
-    {{ content }}
+    <div class = "table-of-content">
+      <h3>Table of Content</h3>
+      {% include toc.html html=content %}
+    </div>
+    <div class= "left-content">
+      {{ content }}
+    </div>
   </div>
-  {%- if site.plainwhite.disqus_shortname -%}
-  <div id="disqus_thread" style="margin-top:25px"></div>
-  <script>
-    var disqus_config = function () {
-      this.page.url = '{{ page.url | absolute_url }}';
-      this.page.identifier = '{{ page.url | absolute_url }}';
-    };
-    (function () {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://{{ site.plainwhite.disqus_shortname }}.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
-    })();
-  </script>
-  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments
-      powered by Disqus.</a></noscript>
-  {%- endif -%}
 </div>

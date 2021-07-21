@@ -30,13 +30,16 @@ layout: default
     {%- for post in paginator.posts -%}
       <li>
         <div class="post-card" style="overflow: auto;">
-          <div class="post-thumb" style="float: left;padding-top: 20px;"><img src="{{ "assets/post-logo2.png" | relative_url}}" width="50px" height="50px" style="display: block;"/></div>
+          <a class="post-link" href="{{ post.url | relative_url }}">
+            <h2 class="post-title-on-home">{{ post.title | escape }}</h2>
+          </a>
+          <div class="post-thumb" style="float: left;padding-top: 5px;"><img src="{{ "assets/post-logo2.png" | relative_url}}" width="50px" height="50px" style="display: block;"/></div>
           <div class="post-content" style="margin-left: 60px;">
             <!-- post content starts-->
             {%- assign date_format = site.plainwhite.date_format | default: "%b %-d, %Y" -%}
-            <a class="post-link" href="{{ post.url | relative_url }}">
+            <!-- a class="post-link" href="{{ post.url | relative_url }}">
               <h2 class="post-title-on-home">{{ post.title | escape }}</h2>
-            </a>
+            </a -->
             <div class="post-meta">
               <div class="post-date">
                 <i class="icon-calendar"></i>
@@ -56,8 +59,7 @@ layout: default
                 {{ post.excerpt | strip_html | strip_newlines | truncate: 256}}
                 <a href="{{ post.url | relative_url }}" style="text-decoration: none !important;">  ...read more </a>
               {%- endif -%}
-        </div>
-        <p></br></p>
+            </div>
             <!-- Post content ends-->
           </div>
         </div>

@@ -1,9 +1,7 @@
 ---
 layout: page
 permalink: /projects
----
-
-# Term Projects 
+title: Projects
 ---
 ## Diamond Rush (2019)
 

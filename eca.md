@@ -1,9 +1,8 @@
 ---
 layout: page
 permalink: eca
+title: Extra Curricular Activities (Detailed)
 ---
-# Extra Curricular Activities (Detailed)
-
 ## Debate Credential
 
 **Bangla Debate**

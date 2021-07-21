@@ -321,6 +321,26 @@ footer {
   display: none;
 }
 
+/*  TOC Content starts*/ 
+.table-of-content{
+  list-style-type: none;
+  @media screen and (min-width: 950px){
+    float: right;
+    max-width: 180px;
+    margin-bottom: 20px;
+    position: sticky;
+    ul{
+      padding-left: 5px;
+    }
+  }
+}
+.left-content{
+  @media screen and (min-width: $smallMobileW){
+    padding-right: 220px;
+  }
+}
+/* Toc content ends*/
+
 .pgination a, .pgination span {
   padding: 7px 18px;
   /*border: 1px solid #eee; */
