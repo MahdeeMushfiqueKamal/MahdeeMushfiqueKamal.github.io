@@ -1,9 +1,10 @@
 ---
 layout: page
 permalink: /projects
-title: Projects
 ---
 
+# Term Projects 
+---
 ## Diamond Rush (2019)
 
 > **CSE 102** (c-project) : An classical Nokia adventure game remade with an OpenGL wrapper igraphics library(iGraphics). 

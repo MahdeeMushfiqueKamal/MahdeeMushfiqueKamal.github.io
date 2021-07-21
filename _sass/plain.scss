@@ -263,22 +263,7 @@ main {
 .post-container {
   padding-left: 30px;
 }
-
-.toc-menu{
-  @media screen and (min-width: $mobileW){
-    width: 180px;
-    float: right;
-    position: sticky;
-    margin: 20px 0px;
-    /* right: 90px;
-    position: fixed; */
-  }
-}
-
 .post {
-  @media screen and (min-width: $mobileW){
-    padding-right: 220px;
-  }
   font-family: "Raleway", sans-serif;
   font-weight: 300;
   color: #222;
@@ -415,17 +400,5 @@ input[type=submit]:hover {
       margin: 0 20px;
     }
     border-top: 1px solid #eee;
-  }
-}
-
-/*toc content*/
-.section-nav {
-  list-style-type: none;
-  padding: 0px;
-  a{
-    text-decoration: none;
-  }
-  li{
-    margin-top: 10px;
   }
 }

@@ -1,9 +1,11 @@
 ---
 layout: page
 permalink: /cv/
-title: Curriculum Vitae
-toc: true
 ---
+
+# Curriculum Vitae
+---
+
 
 ## Academic Credentials
 
