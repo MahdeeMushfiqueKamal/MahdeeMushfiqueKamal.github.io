@@ -75,6 +75,6 @@ plugins:
 #  - jekyll-feed
 
 
-paginate: 5
-paginate_path: "/post/page:num/"
+#paginate: 5
+#paginate_path: "/post/page:num/"
 
