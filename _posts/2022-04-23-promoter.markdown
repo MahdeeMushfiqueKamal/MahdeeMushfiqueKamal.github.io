@@ -10,7 +10,7 @@ From the work of Yamamoto, Y.Y. et al., **LDSS** (Local Distribution of Short Se
 ## Patterns of distribution of peaks:
 First I used a dictionary of dictionaries where the key of the first dictionary is all possible hexamers. The value against a kmer (hexamer) is another dictionary whose key is distance from TSS (Transcription Start Site) and value is the number of occurrences of that kmer in Oryza Sativa genome. I also created a similar dictionary of dictionaries for average/windowed values of 15 base pairs. Finally, plotted location vs occurrences plot in matplotlib.subplots. Here goes my produced figure and code.
 
-![fig 1](/_posts/promoter-output.png)
+![fig 1](/assets/promoter-output.png)
 
 **Code:** \
 First let's import the libraries 
