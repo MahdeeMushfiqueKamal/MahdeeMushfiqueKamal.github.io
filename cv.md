@@ -22,24 +22,34 @@ title: Curriculum Vitae
 - Science Group, Jessore Board, GPA- 5.00 (out of 5.00)
 - January 2014 - Feb 2016
 
+## Experiences
+
+**cBLAST, University of Dhaka  - Research Trainee**
+
+Role in cBLAST consists of-
+  - Presentation on books and research papers
+  - Maintenance of workstation (run on ubuntu) and bioinformatics tools and softwares
+  - Completed training on Advanced computational Genomics and Biostatistics. 
+
+
 ## Technical Skills
-**Programming Language:** C/C++  &emsp;   Java  &emsp;   Python   &emsp;   JavaScript
 
-**Engineering Software:** AutoCAD
+**Programming Language:**  C/C++, Java, Python, R, Javascript \
+**Database:** 			Oracle PL/SQL, postgreSQL \
+**Web Development:** 		Flask, HTML, CSS, Bootstrap4, Jekyll \
+**Others:**  			Figma, AutoCAD, pSpice
 
-**Webdelopment :** HTML, CSS  &emsp; Bootstrap4  &emsp; Jekyll &emsp; Markdown
 
-
-## Scholarships:
+## Scholarships
 
 - Board General Scholarship in Higher Secondary Certificate. (2019- now)
 - University Technical Scholarship. (2019 - now)
 
-## Certifications: 
+## Certifications 
 - Python for Everybody Specialization through Coursera offered by University of Michigan. [[verify]](https://coursera.org/share/0f6d8d056dafb6e4d441d1a174b1d3b8) 
 - Mathmetics for Machine Learning: Linear Algebra through Coursera offered by Imperial College London.  [[verify]](https://coursera.org/share/eeac85eab14a3f80aa1e8c53fe66abb3) 
 
-## Leadership Skills:
+## Leadership Skills
 - Publication Secretary at BUET Debating Club
 - Campus Ambassador at BDApps.  
 
