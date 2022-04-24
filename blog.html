@@ -49,7 +49,7 @@ permalink: blog
             </div>
             <div class="post">
               {%- if site.show_excerpts -%}
-                {{ post.excerpt | strip_html | strip_newlines | truncate: 256}}
+                {{ post.excerpt | strip_html | replace: '\n', ' ' | truncate: 256}}
                 <!-- a href="{{ post.url | relative_url }}" style="text-decoration: none !important;">  ...read more </a -->
               {%- endif -%}
             </div>
