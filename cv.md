@@ -35,6 +35,7 @@ Role in cBLAST consists of-
 ## Technical Skills
 
 **Programming Language:**  C/C++, Java, Python, R, Javascript \
+**Packages:** 			Scikit-learn, Numpy, Pandas, Matplotlib, Keras, BioPython \
 **Database:** 			Oracle PL/SQL, postgreSQL \
 **Web Development:** 		Flask, HTML, CSS, Bootstrap4, Jekyll \
 **Others:**  			Figma, AutoCAD, pSpice
