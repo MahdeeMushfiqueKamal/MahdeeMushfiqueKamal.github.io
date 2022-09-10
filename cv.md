@@ -51,8 +51,9 @@ Role in cBLAST consists of-
 - Mathmetics for Machine Learning: Linear Algebra through Coursera offered by Imperial College London.  [[verify]](https://coursera.org/share/eeac85eab14a3f80aa1e8c53fe66abb3) 
 
 ## Leadership Skills
-- Publication Secretary at BUET Debating Club
-- Campus Ambassador at BDApps.  
+- Media Committee Coordinator, IEEE Computer Society, BUET Student Branch Chapter. 
+- Joint Secretary, BUET Debating Club.
+- Former Publication Secretary, BUET Debating Club.  
 
 ## Extra Curricular Activities
 **Public Speech and Debate**

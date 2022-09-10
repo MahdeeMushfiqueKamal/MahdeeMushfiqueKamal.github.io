@@ -9,8 +9,10 @@ title: Extra Curricular Activities (Detailed)
 
 *University Level:*
 
+- Champion, 9th National Inter-University Environment Debate Championship 2022.
 - Finalist, Top Break, 4th speaker break,  CSDS Fundraiser 2020 (Bangla British Parliamentary)
 - Runner Up, JUDS Paradigm Shift, 2021.
+- Debater of the Tournament, Semifinalist, BDF-UNDP IV 2021
 - Debater of the Tournament, Semifinalist, Annashen Fundraiser 2020 (Bangla Asian Parliamentary)
 - Semi-finalist:  GSCDC IV (Bangla British Parliamentary), Poseidon 1.0 (Mixup team, Bangla Asian Parliamentary)
 - Quarterfinalist: 6th break JUDO IV 2020. (Bangla Asian Parliamentary, offline)
