@@ -4,41 +4,34 @@ permalink: /cv/
 title: Curriculum Vitae
 ---
 
-## Academic Credentials
+## Education
 
-**Bangladesh University of Engineering and Technology (BUET), Dhaka** 
-- pursuing *Bachelor in Science (Engineering)* degree 
-- *Computer Science and Engineering(CSE)*
-- *April 2019 - December 2023*
+**Bangladesh University of Engineering and Technology**  - Expected April 2024 
+- Bachelor of Computer Science and Engineering  
+- Relevant Coursework: Artificial Intelligence, Software Engineering, and Information System Design.
 
-**Govt. M M City College, Khulna** 
-- Higher Secondary Certificate
-- July 2016 - June 2018
-- Science Group, Jessore Board, GPA- 5.00 (out of 5.00)
+## Skills
 
+- **Programming:** C, C++, Python, Java, Javascript, R, Bash
+- **Packages:** Scikit-learn, Numpy, Pandas, Seaborn, Matplotlib, Keras, PyTorch, BioPython
+- **Database:** BigQuery, Oracle PL/SQL, postgreSQL, MongoDB, SQLite
+- **Web Development:** FastAPI, Flask, Django, HTML, CSS, Bootstrap4, Jekyll
+- **DevOps:** Git, Docker, Google Cloud Platform (App Engine, Cloud Build, Logging)
 
-**Khulna Zilla School, Khulna**
-- Secondary School Certificate
-- Science Group, Jessore Board, GPA- 5.00 (out of 5.00)
-- January 2014 - Feb 2016
+## Experience
 
-## Experiences
+**Junior Data Engineer (Part-time)**  -  Concured Ltd, London  - (Jul 2023 - Now)
+- Development and Maintainance of Concured Recommendation API.
+- Designed & Implemented Caching of Static Recommendation Models which reduced the average latency by 30%
 
-**cBLAST, University of Dhaka  - Research Trainee**
+**Python Development Intern**  - Concured Ltd, London - (Nov 2022 - Jun 2023)  
 
-Role in cBLAST consists of-
-  - Presentation on books and research papers
-  - Maintenance of workstation (run on ubuntu) and bioinformatics tools and softwares
-  - Completed training on Advanced computational Genomics and Biostatistics. 
+- Created automated tests using postman, unittests using Pytest, backend development with Python & MongoDB.
+- Created Log based metrics & alerts, LookerStudio BI dashboards for analytics and monitoring.
 
-
-## Technical Skills
-
-**Programming Language:**  C/C++, Java, Python, R, Javascript \
-**Packages:** 			Scikit-learn, Numpy, Pandas, Matplotlib, Keras, BioPython \
-**Database:** 			Oracle PL/SQL, postgreSQL \
-**Web Development:** 		Flask, HTML, CSS, Bootstrap4, Jekyll \
-**Others:**  			Figma, AutoCAD, pSpice
+**Bioinformatics Research Trainee** - cBLAST, University of Dhaka  - (Oct 2021 - Jul 2022)
+- Analysis of local distribution of short sequences in the promoter region.
+- Presentation for lab group on books and research papers. [link](https://docs.google.com/presentation/d/1cgRgFkxMC0ifSaoprxwGTCJImuzxgKYch-3TiM-lZmg/edit?usp=sharing), [link](https://docs.google.com/presentation/d/1hhcyzNmTxiruliO1lukNqMKpxjq_bTeghpVlc6-MwhE/edit?usp=sharing), [link](https://docs.google.com/presentation/d/1gtFcod4zEAMKRNBRE4D2vfSfLAH-auczNQSK73Q96_0/edit?usp=sharing)
 
 
 ## Scholarships
