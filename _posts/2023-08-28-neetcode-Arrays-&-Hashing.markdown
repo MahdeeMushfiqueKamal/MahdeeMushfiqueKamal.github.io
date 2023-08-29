@@ -4,6 +4,11 @@ title: Neetcode Roadmap - Solution to Arrays & Hashing problem in C++
 categories: Neetcode C++
 ---
 
+This post contains C++ solution to the problems in the Arrays & Hashing section of the Neetcode Roadmap. I mostly saved it for myself. 
+Please let me know if you find any mistakes or have any suggestions. 
+
+![Stock Image](/assets/stockimage.jpeg)
+
 ## Contains Duplicate
 
 link: [https://leetcode.com/problems/contains-duplicate/](https://leetcode.com/problems/contains-duplicate/)

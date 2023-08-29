@@ -33,6 +33,8 @@ plainwhite:
       url: "/projects"
     - title: Contact Info
       url: "/contact"
+    - title: Blog
+      url: "/blog"
   # generate social links in footer
   social_links:
     #twitter: DhruboKamal
