@@ -52,7 +52,7 @@ public:
 
 Follow up: What if the inputs contain Unicode characters? How would you adapt your solution to such a case?
 
-`std::unordered_map<std::wstring>` instead of `std::unordered_map<char>`
+Ans: `std::unordered_map<std::wstring>` instead of `std::unordered_map<char>`
 
 ## Two Sum
 
@@ -109,5 +109,152 @@ public:
 ```
 
 ## Top K Frequent Elements
+
+link: [https://leetcode.com/problems/top-k-frequent-elements/](https://leetcode.com/problems/top-k-frequent-elements/)
+
+Solution:
+
+```cpp
+class Solution {
+public:
+    vector<int> topKFrequent(vector<int>& nums, int k) {
+        vector<int> kFreqElements; 
+        unordered_map<int, int> valCount;
+        for(int i : nums) valCount[i]++;
+         
+        vector<pair<int, int>> vec;
+
+        for(auto it : valCount)vec.push_back(pair<int,int>(it.first, it.second));
+
+
+        sort(vec.begin(), vec.end(), [](const auto &a, const auto &b){ return a.second < b.second;});
+        reverse(vec.begin(), vec.end());
+
+        for(int i=0; i<k; i++) kFreqElements.push_back(vec[i].first);
+
+        return kFreqElements;
+    }    
+};
+```
+
+Follow up: Your algorithm's time complexity must be better than O(n log n), where n is the array's size. (TODO)
+
+## Product of Array Except Self
+
+link: [https://leetcode.com/problems/product-of-array-except-self/](https://leetcode.com/problems/product-of-array-except-self/)
+
+Solution:
+
+```cpp
+class Solution {
+public:
+    vector<int> productExceptSelf(vector<int>& nums) {
+        vector<int> prefixProduct(nums.size(), 1), suffixProduct(nums.size(), 1), ans(nums.size(), 1);
+
+        for(int i=1; i< nums.size() ; i++) prefixProduct[i] = prefixProduct[i-1] * nums[i-1];
+
+        for(int i=nums.size()-2; i>= 0; i--) suffixProduct[i] = suffixProduct[i+1] * nums[i+1];
+
+        for(int i=0; i< nums.size(); i++) ans[i] = suffixProduct[i] * prefixProduct[i];
+
+        return ans;
+        
+    }
+};
+```
+
+Follow up: Can you solve the problem in O(1) extra space complexity? (The output array does not count as extra space for space complexity analysis.)
+
+Ans: Use the ans as prefixProduct array and the original array as suffixProduct array.
+
+```cpp
+class Solution {
+public:
+    vector<int> productExceptSelf(vector<int>& nums) {
+        vector<int>  ans(nums.size(), 1);
+
+        for(int i=1; i< nums.size() ; i++) ans[i] = ans[i-1] * nums[i-1];
+
+        // now ans has the prefix array
+
+        int a = nums.back(), b;
+        nums[nums.size()-1] = 1; 
+
+        for(int i=nums.size()-2; i>= 0; i--){
+            b = nums[i]; 
+            nums[i] = nums[i+1] * a;
+            a = b; 
+        } 
+
+        for(int i=0; i< nums.size(); i++) ans[i] = ans[i] * nums[i];
+
+        return ans;
+        
+    }
+};
+``` 
+
+## Valid Sudoku
+
+link: [https://leetcode.com/problems/valid-sudoku/](https://leetcode.com/problems/valid-sudoku/)
+
+Solution:
+
+```cpp
+class Solution {
+public:
+    bool isValidRow(vector<vector<char>>& board, int rowNum){
+        unordered_map<char, int> m;
+        for(int j=0; j< 9; j++){
+            if(board[rowNum][j] != '.')m[board[rowNum][j]]++;
+        }
+        for(auto it: m){
+            if(it.second > 1) return false;
+        }
+        return true; 
+    }
+    bool isValidColumn(vector<vector<char>>& board, int colNum){
+        unordered_map<char, int> m;
+        for(int i=0; i<9; i++){
+            if(board[i][colNum] != '.')m[board[i][colNum]]++;
+        }
+        for(auto it: m){
+            if(it.second > 1) return false;
+        }
+        return true; 
+    }
+
+    bool isValidBox(vector<vector<char>>& board, int rowNum, int colNum){
+        unordered_map<char, int> m;
+        for(int i= rowNum; i < rowNum+3; i++){
+            for(int j = colNum; j< colNum+3; j++){
+                if(board[i][j] != '.')m[board[i][j]]++;
+            }
+        }
+        for(auto it: m){
+            if(it.second > 1) return false;
+        }
+        return true;
+    }
+
+    bool isValidSudoku(vector<vector<char>>& board) {
+        for(int i=0; i<9; i++){
+            if(isValidRow(board, i) == false) return false;
+        }
+        for(int i=0; i<9; i++){
+            if(isValidColumn(board, i) == false) return false;
+        }
+        for(int i=0; i<9 ; i+=3){
+            for(int j=0; j<9; j+=3){
+                if(isValidBox(board, i, j) == false) return false; 
+            }
+        }
+        return true; 
+    }
+};
+```
+
+
+
 
 
