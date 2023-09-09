@@ -259,6 +259,45 @@ public:
 };
 ```
 
+## Longest Consecutive Sequence
+
+link: [https://leetcode.com/problems/longest-consecutive-sequence/](https://leetcode.com/problems/longest-consecutive-sequence/)
+
+Solution:
+
+```cpp
+
+class Solution {
+public:
+    int longestConsecutive(vector<int>& nums) {
+        unordered_map<int, bool> map; 
+
+        for(int num : nums)map[num] = true; 
+
+        int longestSeqLen = 0, currentSeqLen = 0, i; 
+
+        for(int num : nums){
+            if(!map[num-1]){
+                // num is first item
+                currentSeqLen = 1;
+                i = num+1;
+                while(map[i]){
+                    currentSeqLen += 1;
+                    i++;
+                }
+                longestSeqLen = max ( longestSeqLen, currentSeqLen);
+            }
+        }
+
+        
+        return longestSeqLen; 
+    }
+};
+
+```
+
+
+
 
 
 
