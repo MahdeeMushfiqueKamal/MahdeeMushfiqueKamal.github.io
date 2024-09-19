@@ -4,34 +4,47 @@ permalink: /cv/
 title: Curriculum Vitae
 ---
 
-## Education
-
-**Bangladesh University of Engineering and Technology**  - Expected April 2024 
-- Bachelor of Computer Science and Engineering  
-- Relevant Coursework: Artificial Intelligence, Software Engineering, and Information System Design.
-
 ## Skills
 
 - **Programming:** C, C++, Python, Java, Javascript, R, Bash
-- **Packages:** Scikit-learn, Numpy, Pandas, Seaborn, Matplotlib, Keras, PyTorch, BioPython
-- **Database:** BigQuery, Oracle PL/SQL, postgreSQL, MongoDB, SQLite
-- **Web Development:** FastAPI, Flask, Django, HTML, CSS, Bootstrap4, Jekyll
-- **DevOps:** Git, Docker, Google Cloud Platform (App Engine, Cloud Build, Logging)
+- **Packages:** Scikit-learn, Keras, LangChain, Numpy, Pandas, Seaborn, Matplotlib, PyTorch, BioPython
+- **Database:** BigQuery, Oracle PL/SQL, postgreSQL, MongoDB, SQLite, Redis, ElasticSearch
+- **Web Development:** FastAPI, Flask, Django, HTML, Bootstrap4, Jekyll
+- **DevOps:** Git, Docker, Google Cloud Platform
 
 ## Experience
 
-**Junior Data Engineer (Part-time)**  -  Concured Ltd, London  - (Jul 2023 - Now)
-- Development and Maintainance of Concured Recommendation API.
-- Designed & Implemented Caching of Static Recommendation Models which reduced the average latency by 30%
+**ELELEM Artificial Intelligence Ltd, London**  
+*Software Engineer, AI*  - *Apr 2024 - Present*  
+*Remote*
+- Designed and implemented an LLM-powered crawler and scraper using LangChain, retrieving answers from base URLs with a median response time of 4 seconds and 5.6 page visits per query.
+- Collaborated on designing and implementing the *ELELEM Snippet API* to retrieve snippets from curated websites using Elastic Hybrid Search, FAISS, and Vertex-AI Rerankin, achieving a median retrieval time of 200 ms for over 100K documents.
 
-**Python Development Intern**  - Concured Ltd, London - (Nov 2022 - Jun 2023)  
+**Concured Ltd, London**  
+*Junior Data Engineer (Part-time)* - *Apr 2023 - Mar 2024*  - *Remote*
+- Co-designed and built the *Concured Beacon API*, a data pipeline to capture and analyze 4M+ monthly user interaction data, utilizing BigQuery to derive session metrics such as average session duration, length, and click-through rates.
+- Co-developed and maintained the *Concured Recommendation API* using FastAPI, MongoDB, and BigQuery, efficiently handling 200K+ requests per week. Integrated caching of static recommendations using Redis, reducing average latency by 30%.
 
-- Created automated tests using postman, unittests using Pytest, backend development with Python & MongoDB.
-- Created Log based metrics & alerts, LookerStudio BI dashboards for analytics and monitoring.
+**Concured Ltd, London**  
+*Software Development Intern* - *Nov 2022 - Mar 2023* - *Remote*
+- Developed automated tests for backend systems using Postman & Pytest, implemented log-based metrics and alerts in GCP, leading to improved system monitoring and achieving 99.99% reliability.
+- Contributed to the incremental development of backend systems using Python and MongoDB, creating over 30+ pull requests to enhance system functionality.
+- Developed BigQuery-based analytics and dashboards using LookerStudio to evaluate 20+ metrics & machine learning model performance in A/B testing, resulting in enhanced analytics-driven insights.
 
-**Bioinformatics Research Trainee** - cBLAST, University of Dhaka  - (Oct 2021 - Jul 2022)
-- Analysis of local distribution of short sequences in the promoter region.
-- Presentation for lab group on books and research papers. [link](https://docs.google.com/presentation/d/1cgRgFkxMC0ifSaoprxwGTCJImuzxgKYch-3TiM-lZmg/edit?usp=sharing), [link](https://docs.google.com/presentation/d/1hhcyzNmTxiruliO1lukNqMKpxjq_bTeghpVlc6-MwhE/edit?usp=sharing), [link](https://docs.google.com/presentation/d/1gtFcod4zEAMKRNBRE4D2vfSfLAH-auczNQSK73Q96_0/edit?usp=sharing)
+**cBLAST, University of Dhaka**  
+*Bioinformatics Research Trainee*  - *Oct 2021 - Feb 2022*
+- Analysis of Local Distribution of Short Sequences (LDSS) in the promoter region using **BioPython**.
+- Differentially Expressed Genes & Metabolomic Pathway Analysis using **Pandas**, **Numpy** and statistical methods.
+
+## Education
+
+**Bangladesh University of Engineering and Technology**  - *Apr 2019 - June 2024* 
+- Bachelor of Computer Science and Engineering  - *CGPA: 3.40/4.00*
+- Relevant Coursework: Object Oriented Programming, Data Structure & Algorithm I & II, Algorithm Engineering, Software Engineering, Information System Design.
+
+## PUBLICATIONS
+
+- **Mahdee Mushfique Kamal**, Sujoy Das, and Md. Saidur Rahman. 2024. Generating Scale-Free Caterpillar and Series-Parallel Networks - accepted for publishing in *ICCA 2024: Proceedings of the International Conference on Computing Advancements*.
 
 
 ## Scholarships
