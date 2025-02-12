@@ -2,7 +2,8 @@ title: Personal site of MMK
 author: Mahdee Mushfique Kamal
 email: mmkdhrubo@gmail.com
 description: > # this means to ignore newlines until "show_exerpts:"
-  This is a minimal personal website of Mahdee Mushfique Kamal. I am studying Computer Science and Engineering in Bangladesh University of Engineering and Technology.
+  This is a minimal personal website of Mahdee Mushfique Kamal. 
+  I am studying Computer Science and Engineering in Bangladesh University of Engineering and Technology.
   This site contains my curriculum vitae, contact information, academic and side projects.
   This site is inteded to host on github.
 
@@ -38,7 +39,7 @@ plainwhite:
   # generate social links in footer
   social_links:
     #twitter: DhruboKamal
-    github:  DhruboKamal
+    github: DhruboKamal
     linkedIn: in/mmkdhrubo
     facebook: mmk.dhrubo
     #rss: rss
@@ -72,10 +73,8 @@ remote_theme: samarsault/plainwhite-jekyll
 plugins:
   - jekyll-seo-tag
   - jekyll-paginate
-
 #  - jekyll-spaceship
 #  - jekyll-feed
-
 
 #paginate: 5
 #paginate_path: "/post/page:num/"

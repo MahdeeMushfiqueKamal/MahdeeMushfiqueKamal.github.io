@@ -5,18 +5,95 @@ title: Personal site of MMK
 
 <h1>About Me</h1>
 <div class="post">
-    Hi, I am Mahdee Mushfique Kamal, a recent graduate with a BSc degree in Computer Science and Engineering (CSE) from
-    Bangladesh University of Engineering and Technology (BUET). I work remotely as a Software Engineer at ELELEM
-    Artificial Intelligence Ltd, where I design and implement large-scale AI-powered systems. Previously, I served as a
-    Junior Data Engineer at Concured Ltd, contributing to data-driven solutions and backend systems.
-    <br>
-    I aim to excel as a software engineer in the industry, with plans to pursue a PhD and transition into an industry
-    researcher role. My interests lie in Graph Theory, Artificial Intelligence, and Software Engineering, and I am eager
-    to explore their intersections in future research.
-    <br>
-    In addition to my technical endeavors, I am a passionate competitive debater and have participated in over 30
-    national and international tournaments. I am also proud to have won the DU-IIT HackTheVerse Hackathon and secured
-    1st Runner-Up at the IEEE International Signal Processing Cup 2023. I have served as the General Secretary of BUET
-    Debating Club, leading and organizing key
-    events while contributing to the club's growth.
+  Hi, I am Mahdee Mushfique Kamal, a recent graduate with a BSc degree in
+  Computer Science and Engineering (CSE) from Bangladesh University of
+  Engineering and Technology (BUET). I work remotely as a Software Engineer at
+  ELELEM Artificial Intelligence Ltd, where I design and implement large-scale
+  AI-powered systems. Previously, I served as a Junior Data Engineer at Concured
+  Ltd, contributing to data-driven solutions and backend systems.
+  <br />
+  I aim to excel as a software engineer in the industry, with plans to pursue a
+  PhD and transition into an industry researcher role. My interests lie in Graph
+  Theory, Artificial Intelligence, and Software Engineering, and I am eager to
+  explore their intersections in future research.
+  <br />
+  In addition to my technical endeavors, I am a passionate competitive debater
+  and have participated in over 30 national and international tournaments. I am
+  also proud to have won the DU-IIT HackTheVerse Hackathon and secured 1st
+  Runner-Up at the IEEE International Signal Processing Cup 2023. I have served
+  as the General Secretary of BUET Debating Club, leading and organizing key
+  events while contributing to the club's growth.
 </div>
+
+<br />
+<h1>News</h1>
+
+<div class="news-container">
+  {% assign latest_news = site.data.news | slice: 0, 5 %} {% assign older_news =
+  site.data.news | slice: 5, 999 %}
+
+  <!-- Latest News -->
+  {% for item in latest_news %}
+  <div class="news-item">
+    <div class="news-date">{{ item.date }}</div>
+    <div class="news-content">{{ item.content }}</div>
+  </div>
+  {% endfor %}
+
+  <!-- Older News (Hidden by default) -->
+  {% if older_news.size > 0 %}
+  <div class="older-news-toggle">
+    <button onclick="toggleOlderNews()" class="news-toggle-button">
+      <span id="toggle-text">Show Older News</span>
+    </button>
+  </div>
+
+  <div id="older-news" style="display: none;">
+    {% for item in older_news %}
+    <div class="news-item">
+      <div class="news-date">{{ item.date }}</div>
+      <div class="news-content">{{ item.content }}</div>
+    </div>
+    {% endfor %}
+  </div>
+  {% endif %}
+</div>
+
+<style>
+  .older-news-toggle {
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  .news-toggle-button {
+    font-family: "Raleway", sans-serif;
+    background: none;
+    border: 1px solid #ececec;
+    padding: 8px 16px;
+    cursor: pointer;
+    color: #555;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+  }
+
+  .news-toggle-button:hover {
+    background-color: #f5f5f5;
+    color: #0a59b0;
+  }
+</style>
+
+<script>
+  function toggleOlderNews() {
+    const olderNews = document.getElementById('older-news');
+    const toggleText = document.getElementById('toggle-text');
+
+    if (olderNews.style.display === 'none') {
+      olderNews.style.display = 'block';
+      toggleText.textContent = 'Hide Older News';
+    } else {
+      olderNews.style.display = 'none';
+      toggleText.textContent = 'Show Older News';
+    }
+  }
+</script>

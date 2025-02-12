@@ -427,3 +427,46 @@ input[type=submit]:hover {
     border-top: 1px solid #eee;
   }
 }
+
+/* News Section starts */
+.news-container {
+  line-height: 1.9em;
+}
+
+.news-item {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.news-date {
+  font-family: "Raleway", sans-serif;
+  color: #555;
+  min-width: 100px;
+  font-size: 14px;
+}
+
+.news-content {
+  flex: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .news-container {
+    margin: 20px;
+  }
+
+  .news-item {
+    flex-direction: column;
+  }
+
+  .news-date {
+    margin-bottom: 5px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .news-container {
+    margin: 20px;
+  }
+}
+
+/* News Section ends */
