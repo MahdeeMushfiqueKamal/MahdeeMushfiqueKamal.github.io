@@ -71,8 +71,7 @@ title: Curriculum Vitae
 
 - **National Champion of "National Energy Day-Speech Competition, 2015"**, awarded by Mohammad Abdul Hamid, the honorable President of Bangladesh.
 
-- **National Champion,Debater of the final of "International Womens's Day Debate Fastival 2017"** , organized by UN FAO and awarded by Sue Lautze, Country Director, UN Food and Agriculture Organization.
-[View Details]({{"/eca" | relative_url}}) 
+- **National Champion,Debater of the final of "International Womens's Day Debate Fastival 2017"** , organized by UN FAO and awarded by Sue Lautze, Country Director, UN Food and Agriculture Organization. 
 
 
 ## Certifications 

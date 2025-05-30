@@ -1,11 +1,11 @@
-title: Personal site of MMK
+title: Mahdee Mushfique Kamal
 author: Mahdee Mushfique Kamal
 email: mmkdhrubo@gmail.com
 description: > # this means to ignore newlines until "show_exerpts:"
-  This is a minimal personal website of Mahdee Mushfique Kamal. 
-  I am studying Computer Science and Engineering in Bangladesh University of Engineering and Technology.
+  This is the personal website of Mahdee Mushfique Kamal. 
+  I am a Computer Science and Engineering graduate from Bangladesh University of Engineering and Technology (BUET).
+  I am currently working as an AI Engineer at ELELLEM. 
   This site contains my curriculum vitae, contact information, academic and side projects.
-  This site is inteded to host on github.
 
 show_excerpts: true # set to true to show excerpts on the homepage
 
@@ -16,7 +16,7 @@ sass:
 plainwhite:
   name: Mahdee Mushfique Kamal
   #tagline: Developer. Designer
-  disqus_shortname: mahdeemushfiquekamal
+  # disqus_shortname: mahdeemushfiquekamal
   date_format: "%b %-d, %Y"
   sitemap: true # set to true to generate sitemap.xml content
   search: true # set to true to enable searchbar
@@ -24,7 +24,7 @@ plainwhite:
   portfolio_image: "assets/MMK.png" # the path from the base directory of the site to the image to display (no / at the start)
   html_lang: "en" # set the lang attribute of the <html> tag for the pages. See here for a list of codes: https://www.w3schools.com/tags/ref_country_codes.asp
   condensed_mobile:
-    #- home
+    - home
     - page
     - post
   navigation:
@@ -32,8 +32,6 @@ plainwhite:
       url: "/cv"
     - title: Projects
       url: "/projects"
-    - title: Contact Info
-      url: "/contact"
     - title: Blog
       url: "/blog"
   # generate social links in footer
@@ -51,14 +49,6 @@ plainwhite:
     #soundcloud: jekyll
     #telegram: jekyll
     #gitlab: jekyll
-    #email: jekyll
-
-    # Mastodon instances
-    # mastodon:
-    # - username: jekyll
-    #   instance: example.com
-    # - username: jekyll2
-    #   instance: example.com
   analytics_id: "G-JD3Y9RVBW7"
 
 # If you want to link only specific pages in your header, uncomment
@@ -72,7 +62,7 @@ remote_theme: samarsault/plainwhite-jekyll
 
 plugins:
   - jekyll-seo-tag
-  - jekyll-paginate
+#  - jekyll-paginate
 #  - jekyll-spaceship
 #  - jekyll-feed
 
