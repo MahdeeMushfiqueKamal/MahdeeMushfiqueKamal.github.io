@@ -1,0 +1,15 @@
+- title: Generating Scale-Free Caterpillar and Series-Parallel Networks
+  date: July 2024
+  tag: Network-Science,Graph-Theory
+  thumbnail: /assets/images/research/icca2024-11-fig6.jpg
+  details: >
+    This research addresses the challenge of generating scale-free networks within specific graph classes. 
+    It focuses on caterpillars and series-parallel networks, characterizes the value of γ for scale-free caterpillars, 
+    and presents an O(n) algorithm to generate them. 
+    It also introduces an O(m) algorithm for generating scale-free series-parallel networks.
+
+  links:
+    - title: Paper
+      url: https://dl.acm.org/doi/10.1145/3723178.3723189
+    - title: Pdf
+      url: /assets/papers/scale-free-caterpillar-series-parallel.pdf
