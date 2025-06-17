@@ -15,7 +15,7 @@ $leftWidth: 240px;
 }
 
 body {
-  font-family: "Roboto";
+  font-family: sans-serif;
   font-size: 16px;
   line-height: 1.2em;
   margin: 0;
@@ -267,7 +267,7 @@ main {
   padding-left: 30px;
 }
 .post {
-  font-family: "Roboto", sans-serif;
+  font-family: sans-serif;
   font-weight: 300;
   color: #222;
   line-height: 1.9em;
@@ -316,7 +316,7 @@ table {
   }
   th {
     background-color: #eee;
-    font-family: Roboto;
+    font-family: sans-serif;
   }
 }
 
@@ -436,11 +436,13 @@ input[type=submit]:hover {
 .news-item {
   display: flex;
   margin-bottom: 1rem;
-  font-family: "Roboto", sans-serif;
+  font-family: sans-serif;
+  font-weight: 300;
+  color: #222;
 }
 
 .news-date {
-  font-family: "Raleway", sans-serif;
+  font-family: sans-serif;
   color: #555;
   min-width: 100px;
   font-size: 14px;
@@ -448,7 +450,9 @@ input[type=submit]:hover {
 
 .news-content {
   flex: 1;
-  font-family: "Roboto", sans-serif;
+  font-family: sans-serif;
+  font-weight: 300;
+  color: #222;
 }
 
 @media screen and (max-width: 768px) {
