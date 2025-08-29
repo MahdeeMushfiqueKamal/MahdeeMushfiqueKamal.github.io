@@ -1,30 +1,32 @@
 ---
 layout: post
 title: Understanding the LLM Development Cycle - Building, Training & Finetuning
-categories: LLM Lifecycle
+categories: LLM-lifecycle
+excerpt: This post summarizes the key stages in the development cycle of Large Language Models (LLMs), including building, pre-training, and fine-tuning. It covers practical ways to use LLMs, such as public APIs and local deployment, and explains the core Transformer architecture underlying most models. The article outlines the pre-training and fine-tuning processes, highlighting challenges like scaling and resource requirements. It also discusses evaluation benchmarks and common use cases, such as chatbots and classifiers. Insights are drawn from an ACM TechTalk by Sebastian Raschka, providing a concise overview for anyone interested in understanding how LLMs are developed and applied.
+image: assets/LLM1.jpeg
 ---
 
 > This is a summary of ACM TechTalk by Sebastian Raschka by Mahdee Kamal
 
-### Ways to Use LLMs
+#### Ways to Use LLMs
 
 - Public/proprietary services (e.g., ChatGPT, Gemini).
 - Running LLMs locally.
 - Setting up private APIs.
 
-### LLM Development Stages
+#### LLM Development Stages
 
 - **Building**: Coding the architecture and preparing the dataset.
 - **Pre-Training**: Training the LLM as a deep neural network.
 - **Fine-Tuning**: Customizing the pre-trained model for specific tasks.
 
-### How LLM Works
+#### How LLM Works
 
 - An LLM model is simply (pre)trained to predict the next word/token. LLMs generate text iteratively, one word at a time.
 - Input is prepared as sliding windows over text. Batching is used for faster training.
 - LLMs are trained on vast datasets (GPT-3 : 0.5T, LLaMA-1 : 1.4T, LLaMA-3 15T tokens). There is a trend toward both scaling up and improving data quality.
 
-### LLM Architecture
+#### LLM Architecture
 
 - LLMs typically use a Transformer architecture, with key components including tokenization, embedding layers, and a masked multi-head attention module.
 - All the different LLMs have mostly the same architecture. They may differ in dropout, activation function & normalization. Eg: RMSNorm, rotational positional embeddings instead of absolute embeddings.
@@ -42,7 +44,7 @@ categories: LLM Lifecycle
 
 ![LLM Simplified Architecture](/assets/LLLM2.png)
 
-### Pre-training Process
+#### Pre-training Process
 
 - Pre-training involves a standard deep learning training loop with cross-entropy loss and Adam optimizer.
 - Key challenges: Scaling the training process with multiple GPU, involves multiple machines due to the massiveness of model & dataset.
@@ -52,7 +54,7 @@ categories: LLM Lifecycle
 
 Due to the resource-intensive nature of pre-training, existing pre-trained models like LLaMA are often used as a base for further fine-tuning.
 
-### Fine-tuning Process
+#### Fine-tuning Process
 
 We only fine-tune the last few layers.
 
@@ -65,20 +67,20 @@ We only fine-tune the last few layers.
 - For building chatbots or personal assistants, instruction fine-tuning is used, where the model is trained on a dataset containing instructions and desired responses.
 - A prompt style template is applied to the dataset to guide the LLM in following instructions.
 
-### Evaluating LLMs
+#### Evaluating LLMs
 
 - MLU (Massive Multitask Language Understanding) is a multiple-choice benchmark
 - HellSwag and TruthfulQA
 - AlpacaEval
 - Chatbot Arena (Based on Userfeedback)
 
-### Q&A
+#### Q&A
 
-- Fav tool to run LLM locally? - Lama
+- Fav tool to run LLM locally? - Llama
 - How start-ups fine-tunes the weights and biases of an OpenAI GPT? - Not possible, they uses prompt engineering.
 - What is more effective: continuing training a foundational model or developing a Q&A dataset for fine-tuning? - Both approaches work; it’s an open research problem, but Q&A data can provide context-efficient fine-tuning.
-- A little bit more about attention? - read on your own
+- A little bit more about attention? - read on your own.
 
-### Reference
+#### Reference
 
 1. [ACM TechTalk by Sebastian Raschka](https://www.youtube.com/watch?v=fONQAsQ2Nn4&pp=ygUiIEFDTSBUZWNoVGFsayBieSBTZWJhc3RpYW4gUmFzY2hrYQ%3D%3D)

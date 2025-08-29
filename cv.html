@@ -1,0 +1,138 @@
+---
+layout: default
+---
+
+<div class="container py-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-10 col-xl-9">
+      <h2 class="cv-title mb-4 text-center">Curriculum Vitae</h2>
+
+    <!-- Experience Section -->
+     <h3 class="cv-section-title mb-3">Experience</h3>
+      <section class="cv-section mb-5">
+        {% for job in site.data.cv.experience %}
+        <div class="cv-item mb-2">
+          <div class="d-flex justify-content-between align-items-start mb-2">
+            <div>
+              <h5 class="mb-1">{{ job.title }}</h5>
+              <h6 class="text-muted">{{ job.company }}</h6>
+            </div>
+            <div><span class="cv-date">{{ job.start_date }} - {{ job.end_date }}</span></div>
+            
+          </div>
+          {% if job.type %}
+          <p class="cv-location mb-2"><em>{{ job.type }}{% if job.location %} • {{ job.location }}{% endif %}</em></p>
+          {% endif %}
+          <ul class="cv-achievements">
+            {% for achievement in job.achievements %}
+            <li>{{ achievement | markdownify | remove: '<p>' | remove: '</p>' }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% endfor %}
+      </section>
+
+      <!-- Skills Section -->
+       <h3 class="cv-section-title mb-3">Skills</h3>
+      <section class="cv-section mb-5">
+        <ul class="cv-simple-list">
+            {% for skill in site.data.cv.skills %}
+            <li>{{ skill.category }}: {{ skill.items | join: ', ' }}</li>
+            {% endfor %}
+        </ul>
+      </section>
+
+      
+
+      <!-- Education Section -->
+       <h3 class="cv-section-title mb-2">Education</h3>
+      <section class="cv-section mb-5">
+        {% for edu in site.data.cv.education %}
+        <div class="cv-item">
+          <div class="d-flex justify-content-between align-items-start mb-2">
+            <div>
+              <h5 class="mb-1">{{ edu.degree }}</h5>
+              <h6 class="text-muted">{{ edu.institution }}</h6>
+            </div>
+            <span class="cv-date">{{ edu.start_date }} - {{ edu.end_date }}</span>
+          </div>
+          
+          <p class="cv-text mb-2">
+            {% if edu.gpa %}<strong>CGPA:</strong> {{ edu.gpa }} {% endif %} <br>
+          
+          {% if edu.coursework %}
+          <strong>Relevant Coursework:</strong> {{ edu.coursework | join: ', ' }}.
+          {% endif %}
+        </div>
+        {% endfor %}
+      </section>
+
+      <!-- Publications Section -->
+       <h3 class="cv-section-title mb-2">Publications</h3>
+      {% if site.data.cv.publications %}
+      <section class="cv-section mb-5">
+        <ul class="cv-simple-list">
+        {% for pub in site.data.cv.publications %}
+        <li>
+            {{ pub.authors | markdownify | remove: '<p>' | remove: '</p>' }}. {{ pub.year }}. 
+            {{ pub.title }} - {{ pub.status }} in <em>{{ pub.venue }}</em>.
+        </li>
+        {% endfor %}
+      </section>
+      {% endif %}
+
+      <!-- Scholarships Section -->
+       <h3 class="cv-section-title mb-2">Scholarships</h3>
+      {% if site.data.cv.scholarships %}
+      <section class="cv-section mb-5">
+        
+        <ul class="cv-simple-list">
+          {% for scholarship in site.data.cv.scholarships %}
+          <li>{{ scholarship.title }}. ({{ scholarship.period }})</li>
+          {% endfor %}
+        </ul>
+      </section>
+      {% endif %}
+
+      <!-- Achievements Section -->
+       <h3 class="cv-section-title mb-2">Achievements & Leadership</h3>
+      <section class="cv-section mb-5">
+        <ul class="cv-simple-list">
+          {% for achievement in site.data.cv.achievements %}
+          <li>
+            {% if achievement.link %}
+            <a href="{{ achievement.link }}" target="_blank">{{ achievement.title }}</a>
+            {% else %}
+            {{ achievement.title }}
+            {% endif %}
+            {% if achievement.description and achievement.description != "" %}
+             - {{ achievement.description | markdownify | remove: '<p>' | remove: '</p>' }}
+            {% endif %}
+          </li>
+          {% endfor %}
+        </ul>
+      </section>
+
+      <!-- Certifications Section -->
+      {% if site.data.cv.certifications %}
+      <section class="cv-section mb-5">
+        <h3 class="cv-section-title mb-2">Certifications</h3>
+        
+        <ul class="cv-simple-list">
+          {% for cert in site.data.cv.certifications %}
+          <li>
+            <strong>{{ cert.title }}</strong> - {{ cert.provider }}
+            {% if cert.grade %} (Grade: {{ cert.grade }}){% endif %}
+            {% if cert.description %} - {{ cert.description }}{% endif %}
+            {% if cert.verify_link %} 
+            <a href="{{ cert.verify_link }}" target="_blank">Verify</a>
+            {% endif %}
+          </li>
+          {% endfor %}
+        </ul>
+      </section>
+      {% endif %}
+
+    </div>
+  </div>
+</div>

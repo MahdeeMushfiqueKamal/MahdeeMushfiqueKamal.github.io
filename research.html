@@ -1,128 +1,177 @@
 ---
-layout: page
-permalink: /research
-title: Research
+layout: default
+permalink: research
 ---
 
-<style>
-  /* Research-specific styles that extend your existing theme */
-  .research-container {
-    margin-bottom: 40px;
-  }
+<div class="container py-5 mt-4" style="min-height: 100vh">
+  <div class="row">
+    <div class="col-lg-8 mx-auto">
+      <h3 class="mb-4">Publications</h3>
 
-  .research-card {
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid #ececec;
-    margin-bottom: 2rem;
-    padding-bottom: 2rem;
-    font-family: sans-serif;
-    font-weight: 300;
-    color: #222;
-    line-height: 1.9em;
-  }
+      {%- if site.data.publications.size > 0 -%} {%- for publication in
+      site.data.publications -%}
+      <article class="mb-4 pb-4">
+        <div class="row">
+          <!-- Thumbnail -->
+          <div class="col-md-3 col-sm-4">
+            {%- if publication.thumbnail -%}
+            <img
+              src="{{ publication.thumbnail | relative_url }}"
+              alt="{{ publication.title }}"
+              class="img-fluid rounded"
+            />
+            {%- else -%}
+            <div
+              class="bg-light rounded d-flex align-items-center justify-content-center"
+              style="height: 120px"
+            >
+              <i class="bi bi-file-text text-muted" style="font-size: 2rem"></i>
+            </div>
+            {%- endif -%}
+          </div>
 
-  .research-thumbnail {
-    width: 20%;
-    min-width: 150px;
-    margin-right: 30px;
-    flex-shrink: 0;
-  }
+          <!-- Content -->
+          <div class="col-md-9 col-sm-8">
+            <h2 class="h4 mb-2">{{ publication.title | escape }}</h2>
 
-  .research-thumbnail img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    object-fit: cover;
-    max-width: 95%;
-    margin: 10px;
-  }
+            {%- if publication.authors -%}
+            <p class="text-muted mb-1">
+              {{ publication.authors | normalize_whitespace }}
+            </p>
+            {%- endif -%}
 
-  .research-content {
-    flex: 1;
-  }
+            <p class="text-muted mb-1">
+              {{ publication.details | strip_html | normalize_whitespace }}
+            </p>
 
-  .research-title {
-    font-family: "Raleway", sans-serif;
-    font-size: 22px;
-    line-height: 1.2em;
-    margin-bottom: 10px;
-    color: #222;
-    font-weight: 500;
-  }
+            <div
+              class="small text-muted d-flex align-items-center flex-wrap mb-2"
+            >
+              <span class="me-3">
+                <i class="bi bi-calendar3"></i> {{ publication.date }}
+              </span>
 
-  /* Minimal fix for research-meta */
-  .research-meta {
-    font-size: 14px;
-  }
-
-  /* Mobile responsiveness */
-  @media screen and (max-width: 768px) {
-    .research-card {
-      flex-direction: column;
-    }
-
-    .research-thumbnail {
-      width: 100%;
-      margin-right: 0;
-      margin-bottom: 15px;
-    }
-
-    .research-meta {
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 10px;
-    }
-
-    .research-title {
-      font-size: 20px;
-    }
-  }
-
-  @media screen and (max-width: 480px) {
-    .research-title {
-      font-size: 18px;
-    }
-  }
-
-  /* Dark mode compatibility */
-  .dark .research-card {
-    border-bottom-color: #333;
-  }
-
-  .dark .research-title {
-    color: #f6f6f6;
-  }
-
-  .dark .research-details {
-    color: #ddd;
-  }
-</style>
-
-<div class="research-container">
-  {% assign researches = site.data.research %} {% for item in researches %}
-  <div class="research-card">
-    {% if item.thumbnail %}
-    <div class="research-thumbnail">
-      <img src="{{ item.thumbnail | relative_url }}" alt="{{ item.title }}" />
-    </div>
-    {% endif %}
-
-    <div class="research-content">
-      <h2 class="research-title" id="{{ item.title | slugify }}">
-        {{ item.title }}
-      </h2>
-
-      <div class="research-details">{{ item.details | markdownify }}</div>
-
-      <div class="research-meta">
-        {% for link in item.links %}[<a href="{{ link.url }}" target="_blank"
-          >{{ link.title }}</a
-        >] {% endfor %}[{{ item.date }}] [{% assign tags = item.tag | split: ','
-        %}{% for tag in tags %}#{{ tag | strip }}{% if forloop.last == false %}
-        &nbsp; {% endif %}{% endfor %}]
+              {%- if publication.tag -%}
+              <div class="d-flex align-items-center me-3">
+                <i class="bi bi-tags me-1"></i>
+                {%- assign tags = publication.tag | split: ' ' -%} {%- for tag
+                in tags -%}
+                <span class="badge bg-secondary me-1">{{ tag }}</span>
+                {%- endfor -%}
+              </div>
+              {%- endif -%} {%- if publication.links -%}
+              <div class="d-flex align-items-center">
+                <i class="bi bi-link-45deg me-1"></i>
+                {%- for link in publication.links -%}
+                <a
+                  href="{{ link.url }}"
+                  target="_blank"
+                  class="me-2 text-muted"
+                >
+                  {{ link.title | strip_html | normalize_whitespace}}
+                </a>
+                {%- endfor -%}
+              </div>
+              {%- endif -%}
+            </div>
+          </div>
+        </div>
+      </article>
+      {%- endfor -%} {%- else -%}
+      <div class="text-center py-5">
+        <div class="mb-4">
+          <i class="bi bi-journal-text display-1 text-muted"></i>
+        </div>
+        <h3 class="text-muted">No publications yet</h3>
+        <p class="text-muted">Check back later for updates!</p>
       </div>
+      {%- endif -%}
     </div>
   </div>
-  {% endfor %}
+
+  <!-- Research Projects  -->
+  <div class="row">
+    <div class="col-lg-8 mx-auto">
+      <h3 class="mb-4">Research Projects</h3>
+
+      {%- if site.data.research_projects.size > 0 -%} {%- for project in
+      site.data.research_projects -%}
+      <article class="mb-4 pb-4">
+        <div class="row">
+          <!-- Thumbnail -->
+          <div class="col-md-3 col-sm-4">
+            {%- if project.thumbnail -%}
+            <img
+              src="{{ project.thumbnail | relative_url }}"
+              alt="{{ project.title }}"
+              class="img-fluid rounded"
+            />
+            {%- else -%}
+            <div
+              class="bg-light rounded d-flex align-items-center justify-content-center"
+              style="height: 120px"
+            >
+              <i class="bi bi-file-text text-muted" style="font-size: 2rem"></i>
+            </div>
+            {%- endif -%}
+          </div>
+
+          <!-- Content -->
+          <div class="col-md-9 col-sm-8">
+            <h2 class="h4 mb-2">{{ project.title | escape }}</h2>
+
+            {%- if project.authors -%}
+            <p class="text-muted mb-1">
+              {{ project.authors | normalize_whitespace }}
+            </p>
+            {%- endif -%}
+
+            <p class="text-muted mb-1">
+              {{ project.details | strip_html | normalize_whitespace }}
+            </p>
+
+            <div
+              class="small text-muted d-flex align-items-center flex-wrap mb-2"
+            >
+              {%- if project.date -%}
+              <span class="me-3">
+                <i class="bi bi-calendar3"></i> {{ project.date }}
+              </span>
+              {%- endif -%} {%- if project.tag -%}
+              <div class="d-flex align-items-center me-3">
+                <i class="bi bi-tags me-1"></i>
+                {%- assign tags = project.tag | split: ' ' -%} {%- for tag in
+                tags -%}
+                <span class="badge bg-secondary me-1">{{ tag }}</span>
+                {%- endfor -%}
+              </div>
+              {%- endif -%} {%- if project.links -%}
+              <div class="d-flex align-items-center">
+                <i class="bi bi-link-45deg me-1"></i>
+                {%- for link in project.links -%}
+                <a
+                  href="{{ link.url }}"
+                  target="_blank"
+                  class="me-2 text-muted"
+                >
+                  {{ link.title | strip_html | normalize_whitespace}}
+                </a>
+                {%- endfor -%}
+              </div>
+              {%- endif -%}
+            </div>
+          </div>
+        </div>
+      </article>
+      {%- endfor -%} {%- else -%}
+      <div class="text-center py-5">
+        <div class="mb-4">
+          <i class="bi bi-journal-text display-1 text-muted"></i>
+        </div>
+        <h3 class="text-muted">No projects yet</h3>
+        <p class="text-muted">Check back later for updates!</p>
+      </div>
+      {%- endif -%}
+    </div>
+  </div>
 </div>

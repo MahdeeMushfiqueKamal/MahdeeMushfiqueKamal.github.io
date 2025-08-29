@@ -1,78 +1,61 @@
 title: Mahdee Mushfique Kamal
 author: Mahdee Mushfique Kamal
 email: mmkdhrubo@gmail.com
-description: > # this means to ignore newlines until "show_exerpts:"
+description: > 
   This is the personal website of Mahdee Mushfique Kamal. 
   I am a Computer Science and Engineering graduate from Bangladesh University of Engineering and Technology (BUET).
   I am currently working as an AI Engineer at ELELLEM. 
   This site contains my curriculum vitae, contact information, academic and side projects.
 
-show_excerpts: true # set to true to show excerpts on the homepage
 
-# Minima date format
-# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
-sass:
-  sass_dir: _sass
-plainwhite:
+site_config:
   name: Mahdee Mushfique Kamal
-  #tagline: Developer. Designer
   date_format: "%b %-d, %Y"
-  sitemap: true # set to true to generate sitemap.xml content
-  search: true # set to true to enable searchbar
-  dark_mode: true # set to true to add dark mode toggle
-  # portfolio_image: "assets/MMK.png" # the path from the base directory of the site to the image to display (no / at the start)
-  portfolio_image: "assets/Mahdee_Photo_Square.png"
+  sitemap: true
+  search: true
+  dark_mode: true
+  portfolio_image: "assets/Mahdee_Photo_sq.jpg"
   html_lang: "en"
-  condensed_mobile:
-    - home
-    - page
-    - post
   navigation:
-    # - title: CV
-    #   url: "/cv"
+    - title: CV
+      url: "/cv"
     - title: Research
       url: "/research"
-    # - title: Projects
-    #   url: "/projects"
     - title: Blog
       url: "/blog"
-  # generate social links in footer
+
   social_links:
-    #twitter: DhruboKamal
-    github: DhruboKamal
-    linkedIn: in/mmkdhrubo
-    facebook: mmk.dhrubo
-    #rss: rss
-    #dribbble: jekyll
-    #flickr:   jekyll
-    #instagram: jekyll
-    #pinterest: jekyll
+    twitter: mahdee_kamal
+    github: MahdeeMushfiqeKamal
+    linkedIn: in/mahdee-kamal
     #youtube: jekyll
-    #soundcloud: jekyll
-    #telegram: jekyll
-    #gitlab: jekyll
   analytics_id: "G-JD3Y9RVBW7"
 
-# If you want to link only specific pages in your header, uncomment
-# this and add the path to the pages in order as they should show up
-#header_pages:
-# - about.md
+show_excerpt: true
 
-collections:
-  research:
-    output: true
-    permalink: /:collection/:name/
+# url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
-remote_theme: samarsault/plainwhite-jekyll
-#theme: plainwhite
-
+# theme: minima
 plugins:
-  - jekyll-seo-tag
-#  - jekyll-paginate
-#  - jekyll-spaceship
-#  - jekyll-feed
+  - jekyll-feed
 
-#paginate: 5
-#paginate_path: "/post/page:num/"
-
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

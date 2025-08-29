@@ -1,6 +1,7 @@
 - title: Generating Scale-Free Caterpillar and Series-Parallel Networks
-  date: July 2024
-  tag: Network-Science,Graph-Theory
+  authors: <b> Mahdee Mushfique Kamal</b>, Sujoy Das, Md. Saidur Rahman
+  date: June 2025
+  tag: Network-Science Graph-Theory
   thumbnail: /assets/images/research/icca2024-11-fig6.jpg
   details: >
     This research addresses the challenge of generating scale-free networks within specific graph classes. 
@@ -11,5 +12,3 @@
   links:
     - title: Paper
       url: https://dl.acm.org/doi/10.1145/3723178.3723189
-    - title: Pdf
-      url: /assets/papers/scale-free-caterpillar-series-parallel.pdf

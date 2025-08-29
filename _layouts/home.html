@@ -2,12 +2,112 @@
 layout: default
 ---
 
-<ul class="posts">
-  <!-- <li>  
-    <img src="{{site.baseurl}}/assets/cover.jpg" alt="" style="height: 290px; width:100%; object-fit: cover;">
-  </li> -->
-  <li>
-    <div style="height: 5rem;"></div>
-  </li>
-  <li>{{ content }}</li>
-</ul>
+<section id="about" class="container py-5 mt-4">
+  <div class="row">
+    <!-- Profile Image -->
+    <div class="col-lg-3 col-md-4 mb-4 text-center">
+      <img
+        src="{{ site.site_config.portfolio_image | relative_url }}"
+        alt="{{ site.site_config.name }}"
+        class="img-fluid profile-image mb-3"
+      />
+      <div class="social-links-home">
+        {% if site.site_config.social_links.github %}
+        <a
+          href="https://github.com/{{ site.site_config.social_links.github }}"
+          class="btn btn-outline-light btn-sm me-2"
+          target="_blank"
+        >
+          <i class="bi bi-github"></i>
+        </a>
+        {% endif %}
+        {% if site.site_config.social_links.linkedIn %}
+        <a
+          href="https://linkedin.com/{{ site.site_config.social_links.linkedIn }}"
+          class="btn btn-outline-light btn-sm me-2"
+          target="_blank"
+        >
+          <i class="bi bi-linkedin"></i>
+        </a>
+        {% endif %}
+        {% if site.site_config.social_links.twitter %}
+        <a
+          href="https://twitter.com/{{ site.site_config.social_links.twitter }}"
+          class="btn btn-outline-light btn-sm me-2"
+          target="_blank"
+        >
+          <i class="bi bi-twitter"></i>
+        </a>
+        {% endif %}
+        {% if site.site_config.social_links.facebook %}
+        <a
+          href="https://facebook.com/{{ site.site_config.social_links.facebook }}"
+          class="btn btn-outline-light btn-sm me-2"
+          target="_blank"
+        >
+          <i class="bi bi-facebook"></i>
+        </a>
+        {% endif %}
+        {% if site.email %}
+        <a
+          href="mailto:{{ site.email }}"
+          class="btn btn-outline-light btn-sm"
+        >
+          <i class="bi bi-envelope"></i>
+        </a>
+        {% endif %}
+      </div>
+    </div>
+
+    <!-- About Me Content -->
+    <div class="col-lg-9 col-md-8">
+      <h3 class="mb-2">About Me</h3>
+      <div class="about-text">{{ content }}</div>
+    </div>
+  </div>
+</section>
+
+<section id="news" class="container py-1">
+  <h3 class="mb-4">News</h3>
+  
+  {% assign all_news = site.data.news %}
+  {% assign initial_news = all_news | slice: 0, 5 %}
+  {% for item in initial_news %}
+  <div class="news-item">
+    <div class="news-date">[{{ item.date }}]</div>
+    <div class="news-content">{{ item.content }}</div>
+  </div>
+  {% endfor %}
+
+  <!-- Hidden news -->
+  <div id="more-news" style="display: none;">
+    {% assign remaining_news = all_news | slice: 4, all_news.size %}
+    {% for item in remaining_news %}
+    <div class="news-item">
+      <div class="news-date">[{{ item.date }}]</div>
+      <div class="news-content">{{ item.content }}</div>
+    </div>
+    {% endfor %}
+  </div>
+
+  {% if all_news.size > 4 %}
+  <div class="text-center mt-3">
+    <button id="toggle-news-btn" class="btn btn-outline-secondary btn-sm">Show All</button>
+  </div>
+  {% endif %}
+</section>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggleBtn = document.getElementById("toggle-news-btn");
+    const moreNews = document.getElementById("more-news");
+
+    if (toggleBtn && moreNews) {
+      toggleBtn.addEventListener("click", () => {
+        const isHidden = moreNews.style.display === "none";
+        moreNews.style.display = isHidden ? "flex" : "none";
+        toggleBtn.textContent = isHidden ? "Show Less" : "Show All";
+      });
+    }
+  });
+</script>

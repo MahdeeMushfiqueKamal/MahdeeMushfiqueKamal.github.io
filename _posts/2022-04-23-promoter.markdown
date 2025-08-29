@@ -1,13 +1,15 @@
 ---
 layout: post
-title: Observing local distribution of short sequences in plant's promoter region using python. 
+title: Observing local distribution of short sequences in plant's promoter region using python
 categories: Bioinformatics python
+excerpt: This post demonstrates how to analyze the distribution of short DNA sequences in plant promoter regions using Python, following the methodology of Yamamoto et al. The author reproduces key figures from the original study, focusing on Local Distribution of Short Sequences (LDSS) in *Arabidopsis thaliana* and *Oryza sativa*. The workflow involves building dictionaries to count hexamer occurrences relative to the transcription start site (TSS), visualizing results with matplotlib, and performing peak analysis to identify LDSS-positive hexamers. Code snippets and practical insights are provided, making this a useful guide for bioinformatics and promoter analysis.
+image: assets/promoter_output_fig1.png
 ---
-## Background  
+#### Background  
 In my first month at cBLAST, I was given a task to reproduce figure 1 and figure 2 of ***"Identification of plant promoter constituents by analysis of local distribution of short sequences"*** to enhance my skill. 
 From the work of Yamamoto, Y.Y. et al., **LDSS** (Local Distribution of Short Sequences) have been identified within promoters of *Arabidopsis thaliana* and *Oryza Sativa*.[^1]. I tried to reproduce their findings using python code. Here goes my produced figures and code.
 
-## Patterns of distribution of peaks
+#### Patterns of distribution of peaks
 First I used a dictionary of dictionaries where the key of the first dictionary is all possible hexamers. The value against a kmer (hexamer) is another dictionary whose key is distance from TSS (Transcription Start Site) and value is the number of occurrences of that kmer in Oryza Sativa genome. I also created a similar dictionary of dictionaries for average/windowed values of 15 base pairs. Finally, plotted location vs occurrences plot in [matplotlib.subplots](https://matplotlib.org/3.5.0/api/_as_gen/matplotlib.pyplot.subplots.html). 
 
 ![fig 1](/assets/promoter_output_fig1.png)
@@ -86,7 +88,7 @@ ax[0][0].set_title('CTCTTC')
 ax[0][0].set_ylim([0,120])
 ```
 
-## Peak Analysis and Finding Peak positive Hexamers
+#### Peak Analysis and Finding Peak positive Hexamers
 For peak analysis the following parameters were used: 
 Relative Peak Area (RPA) = Peak Area/total area; \
 Relative Peak Height (RPH) = peak height/Base Line; \
@@ -199,8 +201,8 @@ for ShortSeq in AllPossibleKmers(ShortSeqLen):
         ax.scatter(PeakPosition,PAbyBF,color='#B2BEB5',s=5)
 ```
 
-## My remarks 
+#### My remarks 
 Writing the code was the easiest part, but reading the paper again and again to find out what they did and how they did cost most of the time. This project might not be that difficult or technically important but I still wanted to write it as a blog post, since it was my first task at cBLAST. I am looking forward to working on more projects or tasks that involve the promoter region. 
 
-## References
+#### References
 [^1]: Yamamoto, Y.Y., Ichida, H., Matsui, M. et al. Identification of plant promoter constituents by analysis of local distribution of short sequences. BMC Genomics 8, 67 (2007). [https://doi.org/10.1186/1471-2164-8-67](https://doi.org/10.1186/1471-2164-8-67)

@@ -1,29 +1,62 @@
 ---
 layout: default
 ---
-{%- assign date_format = site.plainwhite.date_format | default: "%b %-d, %Y" -%}
-<div class="post-container">
-  <a class="post-link" href="{{ page.url | relative_url }}">
-    <h1 class="post-title" style="font-family: Raleway, sans-serif;">{{ page.title | escape }}</h1>
-  </a>
-  <div class="post-meta">
-    <div class="post-date"><i class="icon-calendar"></i>{{ page.date | date: date_format }}</div>
-    {%- if page.categories.size > 0 -%}
-    <ul class="post-categories">
-      {%- for tag in page.categories -%}
-      <li>{{ tag }}</li>
-      {%- endfor -%}
-    </ul>
-    {%- endif -%}
-  </div>
-  <hr><br>
-  <div class="post">
-    <div class = "table-of-content">
-      <h3>Table of Content</h3>
-      {% include toc.html html=content %}
+
+<article class="container py-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-8 col-xl-7">
+      <!-- Post Header -->
+      <header class="mb-5">
+        <h2 class="display-6 mb-3">{{ page.title }}</h2>
+
+        <!-- Post Meta -->
+        <div class="post-meta mb-4">
+          <div class="d-flex flex-wrap align-items-center text-muted small">
+            <span class="me-3">
+              <i class="bi bi-calendar3 me-1"></i>
+              {{ page.date | date: "%B %d, %Y" }}
+            </span>
+            
+            {% if page.categories %}
+            <span class="me-3">
+              <i class="bi bi-folder me-1"></i>
+              {% for category in page.categories %}
+                <span class="badge bg-secondary me-1">{{ category }}</span>
+              {% endfor %}
+            </span>
+            {% endif %}
+          </div>
+        </div>
+
+      <!-- Post Content -->
+      <div class="post-content">
+        {{ content }}
+      </div>
+
+      <!-- Post Footer -->
+      <footer class="post-footer mt-5 pt-4 border-top">
+
+        <!-- Share Buttons -->
+        <div class="post-share">
+          <h6 class="mb-2">Share this post:</h6>
+          <div class="d-flex gap-2">
+            <a href="https://twitter.com/intent/tweet?url={{ page.url | absolute_url | url_encode }}&text={{ page.title | url_encode }}" 
+               target="_blank" 
+               class="btn btn-outline-light btn-sm">
+              <i class="bi bi-twitter"></i> Twitter
+            </a>
+            <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ page.url | absolute_url | url_encode }}" 
+               target="_blank" 
+               class="btn btn-outline-light btn-sm">
+              <i class="bi bi-linkedin"></i> LinkedIn
+            </a>
+            <a href="mailto:?subject={{ page.title | url_encode }}&body={{ page.url | absolute_url | url_encode }}" 
+               class="btn btn-outline-light btn-sm">
+              <i class="bi bi-envelope"></i> Email
+            </a>
+          </div>
+        </div>
+      </footer>
     </div>
-    <div class= "left-content">
-      {{ content }}
-    </div>
   </div>
-</div>
+</article>

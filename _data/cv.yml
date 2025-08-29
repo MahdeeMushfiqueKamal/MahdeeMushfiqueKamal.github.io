@@ -1,0 +1,113 @@
+skills:
+  - category: "Programming"
+    items: ["C", "C++", "Python", "Java", "Javascript", "R", "Bash"]
+  - category: "Packages"
+    items: ["Scikit-learn", "Keras", "LangChain", "Numpy", "Pandas", "Seaborn", "Matplotlib", "PyTorch", "BioPython"]
+  - category: "Database"
+    items: ["BigQuery", "Oracle PL/SQL", "postgreSQL", "MongoDB", "SQLite", "Redis", "ElasticSearch"]
+  - category: "Web Development"
+    items: ["FastAPI", "Flask", "Django", "HTML", "Bootstrap4", "Jekyll"]
+  - category: "DevOps"
+    items: ["Git", "Docker", "Google Cloud Platform"]
+
+experience:
+  - title: "Software Engineer, AI"
+    company: "ELELEM Artificial Intelligence Ltd, London"
+    type: "Full-time"
+    start_date: "Apr 2024"
+    end_date: "Present"
+    location: "Remote"
+    achievements:
+      - "Designed and implemented an LLM-powered crawler and scraper using LangChain, retrieving answers from base URLs with a median response time of 4 seconds and 5.6 page visits per query."
+      - "Collaborated on designing and implementing the **ELELEM Snippet API** to retrieve snippets from curated websites using Elastic Hybrid Search, FAISS, and Vertex-AI Rerankin, achieving a median retrieval time of 200 ms for over 100K documents."
+
+  - title: "Junior Data Engineer"
+    company: "Concured Ltd, London"
+    type: "Part-time"
+    start_date: "Apr 2023"
+    end_date: "Mar 2024"
+    location: "Remote"
+    achievements:
+      - "Co-designed and built the **Concured Beacon API**, a data pipeline to capture and analyze 4M+ monthly user interaction data, utilizing BigQuery to derive session metrics such as average session duration, length, and click-through rates."
+      - "Co-developed and maintained the **Concured Recommendation API** using FastAPI, MongoDB, and BigQuery, efficiently handling 200K+ requests per week. Integrated caching of static recommendations using Redis, reducing average latency by 30%."
+
+  - title: "Software Development Intern"
+    company: "Concured Ltd, London"
+    type: "Internship"
+    start_date: "Nov 2022"
+    end_date: "Mar 2023"
+    location: "Remote"
+    achievements:
+      - "Developed automated tests for backend systems using Postman & Pytest, implemented log-based metrics and alerts in GCP, leading to improved system monitoring and achieving 99.99% reliability."
+      - "Contributed to the incremental development of backend systems using Python and MongoDB, creating over 30+ pull requests to enhance system functionality."
+      - "Developed BigQuery-based analytics and dashboards using LookerStudio to evaluate 20+ metrics & machine learning model performance in A/B testing, resulting in enhanced analytics-driven insights."
+
+  - title: "Bioinformatics Research Trainee"
+    company: "cBLAST, University of Dhaka"
+    type: "Research"
+    start_date: "Oct 2021"
+    end_date: "Feb 2022"
+    location: "Dhaka, Bangladesh"
+    achievements:
+      - "Analysis of Local Distribution of Short Sequences (LDSS) in the promoter region using **BioPython**."
+      - "Differentially Expressed Genes & Metabolomic Pathway Analysis using **Pandas**, **Numpy** and statistical methods."
+
+education:
+  - degree: "Bachelor of Computer Science and Engineering"
+    institution: "Bangladesh University of Engineering and Technology"
+    start_date: "Apr 2019"
+    end_date: "June 2024"
+    gpa: "3.40/4.00"
+    coursework: ["Object Oriented Programming", "Data Structure & Algorithm I & II", "Algorithm Engineering", "Software Engineering", "Information System Design"]
+
+publications:
+  - authors: "**Mahdee Mushfique Kamal**, Sujoy Das, and Md. Saidur Rahman"
+    year: 2024
+    title: "Generating Scale-Free Caterpillar and Series-Parallel Networks"
+    venue: "ICCA 2024: Proceedings of the International Conference on Computing Advancements"
+    status: "accepted for publishing"
+
+scholarships:
+  - title: "Board General Scholarship in Higher Secondary Certificate"
+    period: "2019 - 2023"
+  - title: "University Technical Scholarship"
+    period: "2019 - 2020"
+
+achievements:
+  - title: "1st Runner Up, IEEE International Signal Processing Cup - 2023"
+    link: "https://signalprocessingsociety.org/community-involvement/ieee-signal-processing-cup-2023"
+    description: "Developed a ML model to classify Schizophrenia and Bipolar Disorder patients using rsf-MRI data, achieving a competitive accuracy of 69.02%. Applied ANOVA testing and SMOTE techniques to address high-dimensional, imbalanced, and noisy data, improving baseline accuracy by 11.3%."
+
+  - title: "Champion, DU-IIT HackTheVerse (DevOps) Hackathon 2023"
+    link: "https://github.com/TaxWizard-BUET-Daredevils"
+    description: "Collaborated in building a highly scalable income tax information collection system using AWS, Next.js, Terraform, and FastAPI. Solely responsible for designing and managing the backend, AI integration, and monitoring components."
+
+  - title: "General Secretary, BUET Debating Club, 2023-24"
+    description: "Organized *BUETDC Nationals 2023*, the *15th Inter-Faculty Debate Tournament*, and the *BUETDC Eco-Champs Case Competition*. Led efforts in sponsor outreach, budgeting, and coordinating with teams and judges from over 100 institutions."
+
+  - title: "Publication Secretary, BUET Debating Club, 2022-23"
+    description: "Assisted in publishing BUETDC's annual magazine *Boidurjo* by conducting 3 interviews, shortlisting 100+ articles, and editing 10+ content."
+
+  - title: "Champion, 9th National Inter-University Environment Debate Championship 2022"
+    description: ""
+
+  - title: "Finalist, 3rd Novice Break, Pre-ABP by Bangladesh Debate Council, 2020"
+    description: ""
+
+  - title: "National Champion of \"National Energy Day-Speech Competition, 2015\""
+    description: "Awarded by Mohammad Abdul Hamid, the honorable President of Bangladesh."
+
+  - title: "National Champion, Debater of the final of \"International Women's Day Debate Festival 2017\""
+    description: "Organized by UN FAO and awarded by Sue Lautze, Country Director, UN Food and Agriculture Organization."
+
+certifications:
+  - title: "Google Cloud Big Data and Machine Learning Fundamentals"
+    provider: "Coursera"
+    grade: "96.33%"
+    description: "Gained expertise in the data-to-AI lifecycle on Google Cloud, building ML pipelines with Vertex AI and AutoML, Dataflow, and Pub/Sub."
+    verify_link: "https://coursera.org/share/38d2f70e828ca3bfc1d47be41c497225"
+
+  - title: "Python Specialization by University of Michigan"
+    provider: "Coursera"
+    description: "Covered data structures, networked application program interfaces, databases, and developed a Capstone Project for data retrieval, processing, and visualization."
+    verify_link: "https://www.coursera.org/account/accomplishments/specialization/NFAP2WZB3RHU"
