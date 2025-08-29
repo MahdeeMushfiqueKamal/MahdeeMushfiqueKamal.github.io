@@ -3,7 +3,7 @@ layout: post
 title: Observing local distribution of short sequences in plant's promoter region using python
 categories: Bioinformatics python
 excerpt: This post demonstrates how to analyze the distribution of short DNA sequences in plant promoter regions using Python, following the methodology of Yamamoto et al. The author reproduces key figures from the original study, focusing on Local Distribution of Short Sequences (LDSS) in *Arabidopsis thaliana* and *Oryza sativa*. The workflow involves building dictionaries to count hexamer occurrences relative to the transcription start site (TSS), visualizing results with matplotlib, and performing peak analysis to identify LDSS-positive hexamers. Code snippets and practical insights are provided, making this a useful guide for bioinformatics and promoter analysis.
-image: assets/promoter_output_fig1.png
+image: assets/images/blog/promoter_output_fig1.png
 ---
 #### Background  
 In my first month at cBLAST, I was given a task to reproduce figure 1 and figure 2 of ***"Identification of plant promoter constituents by analysis of local distribution of short sequences"*** to enhance my skill. 
@@ -12,7 +12,7 @@ From the work of Yamamoto, Y.Y. et al., **LDSS** (Local Distribution of Short Se
 #### Patterns of distribution of peaks
 First I used a dictionary of dictionaries where the key of the first dictionary is all possible hexamers. The value against a kmer (hexamer) is another dictionary whose key is distance from TSS (Transcription Start Site) and value is the number of occurrences of that kmer in Oryza Sativa genome. I also created a similar dictionary of dictionaries for average/windowed values of 15 base pairs. Finally, plotted location vs occurrences plot in [matplotlib.subplots](https://matplotlib.org/3.5.0/api/_as_gen/matplotlib.pyplot.subplots.html). 
 
-![fig 1](/assets/promoter_output_fig1.png)
+![fig 1](/assets/images/blog/promoter_output_fig1.png)
 
 **Code:** \
 First let's import the libraries 
@@ -96,8 +96,8 @@ Peak Area/basal fluctuation = Peak Area/∆area per peak width, ∆area represen
 
 The graph (2B) shows the results. Each dot shows the data of an individual hexamer. The kmers having Peak Area/basal fluctuation > 0.2 were identified as LDSS positive. They can be further classified into three groups, pyrimidine patch (Y Patch), TATA box, and REG (Regulatory Element Group) [^1]
 
-![Fig2A](/assets/promoter_output_fig2A.png)
-![Fig2A](/assets/promoter_output_fig2B.png)
+![Fig2A](/assets/images/blog/promoter_output_fig2A.png)
+![Fig2A](/assets/images/blog/promoter_output_fig2B.png)
 
 code for peak analysis: 
 

@@ -3,7 +3,7 @@ layout: post
 title: Understanding the LLM Development Cycle - Building, Training & Finetuning
 categories: LLM-lifecycle
 excerpt: This post summarizes the key stages in the development cycle of Large Language Models (LLMs), including building, pre-training, and fine-tuning. It covers practical ways to use LLMs, such as public APIs and local deployment, and explains the core Transformer architecture underlying most models. The article outlines the pre-training and fine-tuning processes, highlighting challenges like scaling and resource requirements. It also discusses evaluation benchmarks and common use cases, such as chatbots and classifiers. Insights are drawn from an ACM TechTalk by Sebastian Raschka, providing a concise overview for anyone interested in understanding how LLMs are developed and applied.
-image: assets/LLM1.jpeg
+image: assets/images/blog/LLM1.jpeg
 ---
 
 > This is a summary of ACM TechTalk by Sebastian Raschka by Mahdee Kamal
@@ -38,11 +38,11 @@ image: assets/LLM1.jpeg
 
 **Detailed Architecture:**
 
-![LLM Detailed Architecture](/assets/LLM1.jpeg)
+![LLM Detailed Architecture](/assets/images/blog/LLM1.jpeg)
 
 **SImplified Version: [source](https://drek4537l1klr.cloudfront.net/raschka/v-8/Figures/ch04__image003.png)**
 
-![LLM Simplified Architecture](/assets/LLLM2.png)
+![LLM Simplified Architecture](/assets/images/blog/LLLM2.png)
 
 #### Pre-training Process
 

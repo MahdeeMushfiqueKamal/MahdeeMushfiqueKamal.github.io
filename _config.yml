@@ -14,7 +14,7 @@ site_config:
   sitemap: true
   search: true
   dark_mode: true
-  portfolio_image: "assets/Mahdee_Photo_sq.jpg"
+  portfolio_image: "assets/images/Mahdee_Photo_sq.jpg"
   html_lang: "en"
   navigation:
     - title: CV
@@ -35,8 +35,6 @@ show_excerpt: true
 
 # url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
-# Build settings
-# theme: minima
 plugins:
   - jekyll-feed
 
