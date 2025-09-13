@@ -15,18 +15,31 @@
     This study presents the first complex network analysis of Bangladesh’s power transmission system, comprising 206 nodes and 312 weighted edges. The network shows a weak scale-free property (exponent 2.05) and low clustering (0.055), forming a tree-like topology. Centrality analysis highlights nodes with high betweenness as critical and vulnerable. Resilience testing reveals severe fragmentation risk under targeted attacks. We propose an edge-adding algorithm to improve robustness.
   links: 
     - title: draft_pdf
-      url: http://mahdeemushfique.github.io/assets/pdf/Power_Grid_Network_Bangladesh___A_Complex_Network_Study.pdf
+      url: /assets/pdf/Power_Grid_Network_Bangladesh___A_Complex_Network_Study.pdf
 
 
 
 - title: AutoLimit - A Practical Bi-Level Approach to Resource Management for SLO-Targeted Microservices
   authors: Hasan Masum, <b> Mahdee Mushfique Kamal</b>
   date: Feb 2025
-  tag: SLO, Resource Management, CPU Throttle, Memory Limit
+  tag: SLO, Resource-Management, CPU-Throttle, Memory-Limit
   thumbnail: /assets/images/research/authrottle_diagram.png
-  details: > 
-  We propose a bi-level strategy extending Autothrottle: Captain, a lightweight controller adjusting CPU via throttling signals, and Tower, a centralized bandit-based controller setting dynamic performance targets. With heuristic rules for memory scaling, our approach reduces memory limits by 50.6–60.3%, cutting waste while ensuring SLO compliance in scalable microservices.
-  
+  details: >
+    We propose a bi-level strategy extending Autothrottle: Captain, a lightweight controller adjusting CPU via throttling signals, and Tower, a centralized bandit-based controller setting dynamic performance targets. With heuristic rules for memory scaling, our approach reduces memory limits by 50.6–60.3%, cutting waste while ensuring SLO compliance in scalable microservices. 
   links: 
     - title: draft_pdf 
-      url: http://mahdeemushfique.github.io/assets/pdf/autoalloc.pdf
+      url: /assets/pdf/autolimit.pdf
+
+
+- title: Psychosis Classification using rsfMRI
+  authors: Abu Humayed Azim Fahmid, <b> Mahdee Mushfique Kamal</b>
+  date: Dec 2024
+  tag: Connectome-Convolutional-Neural-Network Psychosis-Classification
+  # thumbnail: /assets/images/research/psychosis_classification.png
+  details: >
+    This project proposes a modified Connectome Convolutional Neural Network (CCNN) that leverages resting-state fMRI data to classify and distinguish between schizophrenia and bipolar disorder.
+  links: 
+    - title: draft_pdf
+      url: https://www.researchgate.net/profile/Abu-Humayed-Azim-Fahmid/publication/387067226_Psychosis_Classification_using_rsfMRI/links/675e99188a08a27dd0c63536/Psychosis-Classification-using-rsfMRI.pdf
+    - title: poster 
+      url: https://www.researchgate.net/publication/386564560_Psychosis_Classification_using_rsfMRI
