@@ -3,10 +3,30 @@
   tag: Scientific-Disruption Science-Of-Science
   thumbnail: /assets/images/research/scientific_disruption.png
   details: >
-    This research addresses the challenge of analyzing pre-publication team-level factors that affect scientific disruption.
-    It focuses on identifying key variables and their relationships, utilizing a combination of qualitative and quantitative methods.
-    The goal is to provide insights into how team dynamics and external influences contribute to the success of scientific innovations.
+    The scientific disruption index, which tracks how publications shift focus from prior work, is a key metric in the Science of Science. Large teams, high individual productivity, and distant or international collaborations correlate negatively with disruption, while diversity, new teams, and flat structures correlate positively. This study analyzes additional pre-publication team factors to reveal how team dynamics and external influences shape the success of scientific innovation.
 
-  links:
-    - title: Paper
-      url: https://dl.acm.org/doi/10.1145/3723178.3723189
+
+- title: Power Grid Network Bangladesh - A Complex Network Study
+  authors: <b> Mahdee Mushfique Kamal</b>, Mohammad Al-Mahmud, Md. Saidur Rahman
+  date: Feb 2025
+  tag: Network-Science Centrality-Analysis Network-Robustness
+  thumbnail: /assets/images/research/power_grid_thumbnail.png
+  details: >
+    This study presents the first complex network analysis of Bangladesh’s power transmission system, comprising 206 nodes and 312 weighted edges. The network shows a weak scale-free property (exponent 2.05) and low clustering (0.055), forming a tree-like topology. Centrality analysis highlights nodes with high betweenness as critical and vulnerable. Resilience testing reveals severe fragmentation risk under targeted attacks. We propose an edge-adding algorithm to improve robustness.
+  links: 
+    - title: draft_pdf
+      url: http://mahdeemushfique.github.io/assets/pdf/Power_Grid_Network_Bangladesh___A_Complex_Network_Study.pdf
+
+
+
+- title: AutoLimit - A Practical Bi-Level Approach to Resource Management for SLO-Targeted Microservices
+  authors: Hasan Masum, <b> Mahdee Mushfique Kamal</b>
+  date: Feb 2025
+  tag: SLO, Resource Management, CPU Throttle, Memory Limit
+  thumbnail: /assets/images/research/authrottle_diagram.png
+  details: > 
+  We propose a bi-level strategy extending Autothrottle: Captain, a lightweight controller adjusting CPU via throttling signals, and Tower, a centralized bandit-based controller setting dynamic performance targets. With heuristic rules for memory scaling, our approach reduces memory limits by 50.6–60.3%, cutting waste while ensuring SLO compliance in scalable microservices.
+  
+  links: 
+    - title: draft_pdf 
+      url: http://mahdeemushfique.github.io/assets/pdf/autoalloc.pdf
