@@ -21,8 +21,8 @@ site_config:
       url: "/cv"
     - title: Research
       url: "/research"
-    - title: Blog
-      url: "/blog"
+    # - title: Blog
+    #   url: "/blog"
 
   social_links:
     twitter: mahdee_kamal
