@@ -7,6 +7,26 @@
   --border-color: #404040;
 }
 
+/* Light mode variables */
+[data-bs-theme="light"] {
+  --primary-color: #0d6efd;
+  --background-dark: #ffffff;
+  --background-light: #f8f9fa;
+  --text-light: #212529;
+  --text-muted: #6c757d;
+  --border-color: #dee2e6;
+}
+
+/* Dark mode variables (explicit) */
+[data-bs-theme="dark"] {
+  --primary-color: #0d6efd;
+  --background-dark: #212328;
+  --background-light: #2a2d33;
+  --text-light: #e0e0e0;
+  --text-muted: #9ca3af;
+  --border-color: #404040;
+}
+
 body {
   font-family: 'Inter', sans-serif;
   background-color: var(--background-dark) !important;
@@ -20,6 +40,10 @@ h1, h2, h3, h4, h5, h6 {
 a {
   color: var(--text-light);
   text-decoration: underline;
+}
+
+a:hover {
+  color: var(--primary-color);
 }
 
 /* Footer */
@@ -46,12 +70,22 @@ footer {
   width: 220px;
   height: 220px;
   object-fit: cover;
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
 }
 
 /* Social links */
 .social-links-home .btn {
   border-radius: 50px;
   padding: 0.4rem 0.7rem;
+  border-color: var(--border-color);
+  color: var(--text-light);
+}
+
+.social-links-home .btn:hover {
+  background-color: var(--background-light);
+  border-color: var(--primary-color);
+  color: var(--primary-color);
 }
 
 /* News section */
@@ -76,11 +110,49 @@ footer {
   flex-direction: column;
 }
 
+/* Theme Toggle Button */
+.theme-toggle {
+  background: none;
+  border: 1px solid var(--border-color);
+  color: var(--text-light);
+  font-size: 1.25rem;
+  padding: 0.25rem 0.5rem;
+  cursor: pointer;
+  border-radius: 0.375rem;
+  margin-left: 0.5rem;
+}
+
+.theme-toggle:hover {
+  background-color: var(--background-light);
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+/* Navbar adjustments */
+.navbar {
+  background-color: var(--background-light) !important;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.navbar-brand,
+.nav-link {
+  color: var(--text-light) !important;
+}
+
+.nav-link:hover {
+  color: var(--primary-color) !important;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .profile-image {
     width: 180px;
     height: 180px;
+  }
+  
+  .theme-toggle {
+    margin-left: 0;
+    margin-top: 0.5rem;
   }
 }
 
@@ -190,6 +262,13 @@ footer {
 
 .post-share .btn {
   border-color: var(--border-color);
+  color: var(--text-light);
+}
+
+.post-share .btn:hover {
+  background-color: var(--background-light);
+  border-color: var(--primary-color);
+  color: var(--primary-color);
 }
 
 /* Badge styling for categories/tags */
@@ -203,6 +282,29 @@ footer {
   background-color: transparent !important;
   color: var(--text-muted);
   border: 1px solid var(--border-color);
+}
+
+/* Button overrides for light/dark mode */
+.btn-outline-light {
+  border-color: var(--border-color);
+  color: var(--text-light);
+}
+
+.btn-outline-light:hover {
+  background-color: var(--background-light);
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+.btn-outline-secondary {
+  border-color: var(--border-color);
+  color: var(--text-muted);
+}
+
+.btn-outline-secondary:hover {
+  background-color: var(--background-light);
+  border-color: var(--text-light);
+  color: var(--text-light);
 }
 
 /* Responsive adjustments */
@@ -222,9 +324,7 @@ footer {
 }
 /* End Post Related */
 
-
 /* CV Page */
-
 .cv-section {
   padding-left: 1.5rem;
 }
@@ -265,8 +365,13 @@ footer {
 }
 
 .cv-simple-list a:hover {
-  color: var(--text-muted);
+  color: var(--primary-color);
   text-decoration: underline;
+}
+
+.cv-title,
+.cv-section-title {
+  color: var(--text-light);
 }
 
 /* Responsive adjustments */
@@ -285,3 +390,14 @@ footer {
   }
 }
 /* CV PAGE ends */
+
+/* Card styles for blog/research pages */
+article .img-fluid,
+article .bg-light {
+  border: 1px solid var(--border-color);
+}
+
+article:hover .img-fluid,
+article:hover .bg-light {
+  border-color: var(--primary-color);
+}

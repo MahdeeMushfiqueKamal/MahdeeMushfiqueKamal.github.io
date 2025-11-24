@@ -1,7 +1,6 @@
 ---
 layout: home
 title: Home
-css: home.css
 ---
 
 Hi, I am Mahdee Mushfique Kamal, a recent graduate with a BSc degree in
@@ -14,9 +13,7 @@ Ltd, contributing to data-driven solutions and backend systems.
 
 
 
-I aim to excel as a software engineer in the industry, with plans to pursue a
-PhD and transition into an industry researcher role. My interests lie in Graph
-Theory, Network Science, and Artificial Intelligence.
+I am planning to pursue a PhD degree. My interests lie in Network Science, Science of Science and Applied Data Science.
 
 
 
