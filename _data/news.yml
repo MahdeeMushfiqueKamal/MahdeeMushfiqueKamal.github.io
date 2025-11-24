@@ -1,11 +1,14 @@
+- date: Sep 2025
+  content: "New preprint out, \"Beginner’s Charm: Beginner-Heavy Teams Are Associated With High Scientific Disruption.\"  Available at <a href=\"https://arxiv.org/pdf/2509.10389\" target=\"_blank\">https://arxiv.org/pdf/2509.10389</a>."
+
 - date: Jun 2025
-  content: Our paper, "Generating Scale-Free Caterpillar and Series-Parallel Networks" just got accepted at 3rd International Conference on Computing Advancements (ICCA 2024) and available on <a href="https://dl.acm.org/doi/10.1145/3723178.3723189">https://dl.acm.org/doi/10.1145/3723178.3723189</a>.
+  content: Our paper, "Generating Scale-Free Caterpillar and Series-Parallel Networks" just got accepted at 3rd International Conference on Computing Advancements (ICCA 2024) and available on <a href="https://dl.acm.org/doi/10.1145/3723178.3723189" target="_blank">https://dl.acm.org/doi/10.1145/3723178.3723189</a>.
 
 - date: Jun 2024
   content: Graduated from Bangladesh University of Engineering and Technology (BUET) with a B.Sc. in Computer Science and Engineering. 
 
 - date: Apr 2024
-  content: Joined <a href ="https://www.elelem.ai/">ELELEM Artificial Intelligence Ltd.</a> as a Software Engineer, focusing on AI-powered systems. ELELEM AI is a UK based startup specializing visibility in AI-driven search and optimization. I will be working directly under our CTO <a href ="https://www.linkedin.com/in/tgbwilson">Dr. Tom Wilson</a>.
+  content: Joined <a href ="https://www.elelem.ai/" target="_blank">ELELEM Artificial Intelligence Ltd.</a> as a Software Engineer, focusing on AI-powered systems. ELELEM AI is a UK based startup specializing visibility in AI-driven search and optimization. I will be working directly under our CTO <a href ="https://www.linkedin.com/in/tgbwilson">Dr. Tom Wilson</a>.
 
 # - date: Oct 2023
 #   content: Won DU-IIT HackTheVerse DevOps Hackathon for developing a scalable income tax information system.

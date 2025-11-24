@@ -8,7 +8,7 @@ Hi, I am Mahdee Mushfique Kamal, a recent graduate with a BSc degree in
 Computer Science and Engineering (CSE) from Bangladesh University of
 Engineering and Technology (BUET). I work remotely as a Software Engineer at
 ELELEM Artificial Intelligence Ltd, where I design and implement large-scale
-AI-powered systems. I am also pursuing a part-time MSc in CSE at BUET. 
+AI-powered systems.
 Previously, I served as a Junior Software Engineer at Concured
 Ltd, contributing to data-driven solutions and backend systems.
 
