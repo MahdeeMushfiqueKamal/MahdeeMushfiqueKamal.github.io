@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 permalink: eca
 title: Extra Curricular Activities (Detailed)
 ---
